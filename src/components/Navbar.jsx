@@ -4,7 +4,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         
         <h1 className="text-white font-bold text-xl">
-          YourName
+          Shihab
         </h1>
 
         <ul className="hidden md:flex gap-8 text-gray-300">
