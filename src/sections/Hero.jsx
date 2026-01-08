@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="text-center px-6">
 
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          Hi, I’m <span className="text-blue-500">YourName</span>
+          Hi, I’m <span className="text-blue-500">Shihab</span>
         </h1>
 
         <p className="text-gray-400 max-w-xl mx-auto mb-8">

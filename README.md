@@ -1,16 +1,50 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with React and Tailwind CSS.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **[React](https://react.dev/)** - The library for web and native user interfaces
+- **[Vite](https://vitejs.dev/)** - Next Generation Frontend Tooling
+- **[Tailwind CSS](https://tailwindcss.com/)** - Rapidly build modern websites without ever leaving your HTML
 
-## React Compiler
+## 🛠️ Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Follow these steps to set up the project locally on your machine.
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Make sure you have [Node.js](https://nodejs.org/) installed on your system.
+
+### Installation
+
+1. **Clone the repository** (if applicable) or navigate to the project directory.
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser**:
+   Navigate to [http://localhost:5173](http://localhost:5173) to view the application.
+
+## 📁 Project Structure
+
+The project structure is organized as follows:
+
+- **`src/components`**: Reusable UI components (e.g., `Navbar`, `Button`).
+- **`src/pages`**: Main page components (e.g., `Home`).
+- **`src/sections`**: Specific sections of pages (e.g., `Hero` section).
+- **`src/assets`**: Static assets like images and icons.
+
+## 📜 Scripts
+
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the app for production.
+- `npm run preview`: Locally preview the production build.
+- `npm run lint`: Runs ESLint to check for code quality issues.
