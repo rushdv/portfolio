@@ -1,50 +1,72 @@
-# Personal Portfolio
+# Modern Developer Portfolio
 
-A modern, responsive personal portfolio website built with React and Tailwind CSS.
+A personal portfolio website built with modern web technologies, featuring a clean dark theme, smooth animations, and a responsive design.
 
-## 🚀 Tech Stack
+![Portfolio Preview](https://i.imgur.com/your-preview-image.png)
 
-- **[React](https://react.dev/)** - The library for web and native user interfaces
+## 🚀 Built With
+
+- **[React](https://reactjs.org/)** - UI Library
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[Framer Motion](https://www.framer.com/motion/)** - Production-ready animation library
 - **[Vite](https://vitejs.dev/)** - Next Generation Frontend Tooling
-- **[Tailwind CSS](https://tailwindcss.com/)** - Rapidly build modern websites without ever leaving your HTML
+- **[Lucide React](https://lucide.dev/)** - Beautiful & consistent icons
+
+## ✨ Features
+
+- **Dark Mode Design**: Sleek dark slate theme (`#0f172a`) with cyan accents.
+- **Responsive Layout**: Fully responsive design that works seamlessly on mobile, tablet, and desktop.
+- **Interactive Animations**: Smooth entrance animations and hover effects powered by Framer Motion.
+- **Scroll Spy Navigation**: Navbar that updates active state based on scroll position.
+- **Mobile Menu**: Custom hamburger menu with backdrop blur for mobile devices.
+
+## 📂 Project Structure
+
+```
+src/
+├── components/      # Reusable UI components (Navbar, Footer)
+├── sections/        # Page sections (Hero, About, Projects, Skills, Contact)
+├── assets/          # Static assets
+└── App.jsx          # Main application entry
+```
 
 ## 🛠️ Getting Started
 
-Follow these steps to set up the project locally on your machine.
+Follow these steps to set up the project locally.
 
 ### Prerequisites
 
-Make sure you have [Node.js](https://nodejs.org/) installed on your system.
+- Node.js (v14 or higher)
+- npm or yarn
 
 ### Installation
 
-1. **Clone the repository** (if applicable) or navigate to the project directory.
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
+   cd portfolio
+   ```
 
-2. **Install dependencies**:
+2. Install dependencies
    ```bash
    npm install
    ```
 
-3. **Start the development server**:
+3. Start the development server
    ```bash
    npm run dev
    ```
 
-4. **Open in browser**:
-   Navigate to [http://localhost:5173](http://localhost:5173) to view the application.
+4. Build for production
+   ```bash
+   npm run build
+   ```
 
-## 📁 Project Structure
+## 🎨 Customization
 
-The project structure is organized as follows:
+- **Colors**: Edit `tailwind.config.js` to change the `slate` (background) or `cyan` (primary) color palettes.
+- **Content**: Update the sections in `src/sections/` to add your own bio, projects, and skills.
 
-- **`src/components`**: Reusable UI components (e.g., `Navbar`, `Button`).
-- **`src/pages`**: Main page components (e.g., `Home`).
-- **`src/sections`**: Specific sections of pages (e.g., `Hero` section).
-- **`src/assets`**: Static assets like images and icons.
+## 📄 License
 
-## 📜 Scripts
-
-- `npm run dev`: Starts the development server.
-- `npm run build`: Builds the app for production.
-- `npm run preview`: Locally preview the production build.
-- `npm run lint`: Runs ESLint to check for code quality issues.
+This project is open source and available under the [MIT License](LICENSE).
