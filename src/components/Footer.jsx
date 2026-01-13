@@ -5,7 +5,7 @@ export default function Footer() {
         <footer className="bg-slate-900 border-t border-white/10 py-12">
             <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 mb-12">
                 <div className="col-span-1 md:col-span-2">
-                    <a href="#" className="text-2xl font-bold font-mono text-cyan-500 block mb-4">
+                    <a href="https://shihab313.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-2xl font-bold font-mono text-cyan-500 block mb-4">
                         &lt;Shihab /&gt;
                     </a>
                     <p className="text-slate-400 max-w-sm">
@@ -27,10 +27,10 @@ export default function Footer() {
                 <div>
                     <h3 className="text-slate-200 font-semibold mb-4">Contact</h3>
                     <ul className="space-y-2 text-slate-400">
-                        <li>shihab@example.com</li>
-                        <li>+1 (555) 123-4567</li>
+                        <li>shihab.zn4@gmail.com</li>
+                        <li>+880 1000 000000</li>
                         <li className="flex gap-4 mt-4">
-                            <a href="#" className="hover:text-cyan-500 transition-colors"><Github size={20} /></a>
+                            <a href="https://github.com/rushdv" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-500 transition-colors"><Github size={20} /></a>
                             <a href="#" className="hover:text-cyan-500 transition-colors"><Linkedin size={20} /></a>
                             <a href="#" className="hover:text-cyan-500 transition-colors"><Twitter size={20} /></a>
                             <a href="#" className="hover:text-cyan-500 transition-colors"><Mail size={20} /></a>

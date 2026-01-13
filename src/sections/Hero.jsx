@@ -21,12 +21,10 @@ export default function Hero() {
               Shihab.
             </h1>
             <h3 className="text-4xl md:text-6xl font-bold text-slate-400">
-              I build things for the web.
+              Computer Science Student | Full-Stack Developer | Security Enthusiast
             </h3>
             <p className="text-slate-400 max-w-xl text-lg leading-relaxed">
-              I'm a software engineer specializing in building (and occasionally designing)
-              exceptional digital experiences. Currently, I'm focused on building accessible,
-              human-centered products.
+              Building clean, scalable, and secure systems with modern technologies.
             </p>
           </div>
 
@@ -80,7 +78,7 @@ export default function Hero() {
                 <span className="text-red-400">this</span>.skills = [
               </div>
               <div className="pl-12 text-slate-300">
-                <span className="text-green-400">"React"</span>, <span className="text-green-400">"Node.js"</span>, <span className="text-green-400">"TypeScript"</span>
+                <span className="text-green-400">"Full-Stack"</span>, <span className="text-green-400">"Security"</span>, <span className="text-green-400">"Web"</span>
               </div>
               <div className="pl-8 text-slate-300">];</div>
               <div className="pl-8 text-slate-300">
