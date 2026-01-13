@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 const skills = {
     Frontend: ["HTML", "CSS", "Tailwind CSS", "React", "Framer Motion", "JavaScript (ES6+)"],
     Backend: ["Node.js", "Express", "PostgreSQL", "MongoDB", "Prisma", "GraphQL"],
+    Security: ["Burp Suite", "Wireshark", "Nmap", "Metasploit", "Kali Linux", "OWASP ZAP"],
     Tools: ["Git", "Docker", "AWS", "Figma", "VS Code", "Vercel"]
 };
 
@@ -20,7 +21,7 @@ export default function Skills() {
                         <span className="text-cyan-500 mr-2">03.</span> Skills & Technologies
                     </h2>
 
-                    <div className="grid md:grid-cols-3 gap-8">
+                    <div className="grid md:grid-cols-2 gap-8">
                         {Object.entries(skills).map(([category, items], index) => (
                             <motion.div
                                 key={category}
