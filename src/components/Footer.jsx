@@ -27,8 +27,8 @@ export default function Footer() {
                 <div>
                     <h3 className="text-slate-200 font-semibold mb-4">Contact</h3>
                     <ul className="space-y-2 text-slate-400">
-                        <li>shihab@example.com</li>
-                        <li>+1 (555) 123-4567</li>
+                        <li>shihab.zn4@gmail.com</li>
+                        <li>+880 1000 000000</li>
                         <li className="flex gap-4 mt-4">
                             <a href="#" className="hover:text-cyan-500 transition-colors"><Github size={20} /></a>
                             <a href="#" className="hover:text-cyan-500 transition-colors"><Linkedin size={20} /></a>
