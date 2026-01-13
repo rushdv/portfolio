@@ -46,9 +46,9 @@ export default function Hero() {
           </div>
 
           <div className="flex gap-6 mt-12 text-slate-400">
-            <a href="#" className="hover:text-cyan-500 hover:-translate-y-1 transition-all"><Github size={24} /></a>
-            <a href="#" className="hover:text-cyan-500 hover:-translate-y-1 transition-all"><Linkedin size={24} /></a>
-            <a href="#" className="hover:text-cyan-500 hover:-translate-y-1 transition-all"><Twitter size={24} /></a>
+            <a href="https://github.com/rushdv" className="hover:text-cyan-500 hover:-translate-y-1 transition-all"><Github size={24} /></a>
+            <a href="https://www.linkedin.com/in/shihab-shahriar-rashu-431a3a217" className="hover:text-cyan-500 hover:-translate-y-1 transition-all"><Linkedin size={24} /></a>
+            <a href="https://twitter.com/rushdv313" className="hover:text-cyan-500 hover:-translate-y-1 transition-all"><Twitter size={24} /></a>
           </div>
         </motion.div>
 

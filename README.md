@@ -1,8 +1,9 @@
-# Modern Developer Portfolio
+# Shihab's Portfolio 🚀
 
-A personal portfolio website built with modern web technologies, featuring a clean dark theme, smooth animations, and a responsive design.
+> "Building clean, scalable, and secure systems with modern technologies."
 
-![Portfolio Preview](https://i.imgur.com/your-preview-image.png)
+A personalized developer portfolio built with React and Tailwind CSS, featuring a unique terminal-themed contact section, dark mode aesthetics, and a showcase of full-stack and cybersecurity skills.
+
 
 ## 🚀 Built With
 
@@ -14,11 +15,12 @@ A personal portfolio website built with modern web technologies, featuring a cle
 
 ## ✨ Features
 
-- **Dark Mode Design**: Sleek dark slate theme (`#0f172a`) with cyan accents.
-- **Responsive Layout**: Fully responsive design that works seamlessly on mobile, tablet, and desktop.
-- **Interactive Animations**: Smooth entrance animations and hover effects powered by Framer Motion.
-- **Scroll Spy Navigation**: Navbar that updates active state based on scroll position.
-- **Mobile Menu**: Custom hamburger menu with backdrop blur for mobile devices.
+- **🎨 Modern Dark Aesthetic**: Deep slate theme with vibrant cyan accents and glassmorphism effects.
+- **💻 Terminal-Style Interaction**: Unique "Get in Touch" section designed as a coding IDE with syntax highlighting.
+- **📱 Fully Responsive**: Seamless experience across mobile, tablet, and desktop devices.
+- **⚡ High Performance**: Built with Vite for lightning-fast HMR and optimized production builds.
+- **✨ Smooth Animations**: Powered by Framer Motion for engaging entrance and hover effects.
+- **🛡️ Security Focused**: Showcases cybersecurity toolset and skills alongside development expertise.
 
 ## 📂 Project Structure
 
@@ -43,7 +45,7 @@ Follow these steps to set up the project locally.
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/rushdv/portfolio.git
    cd portfolio
    ```
 
