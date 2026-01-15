@@ -15,12 +15,12 @@ export default function Hero() {
         >
           <div className="space-y-4">
             <h2 className="text-cyan-500 font-medium text-lg tracking-wide">
-              Hi, my name is
+              Hi, I'm
             </h2>
             <h1 className="text-5xl md:text-7xl font-bold text-slate-100 tracking-tight">
               Shihab.
             </h1>
-            <h3 className="text-4xl md:text-6xl font-bold text-slate-400">
+            <h3 className="text-4xl md:text-5xl font-bold text-slate-400">
               Computer Science Student | Full-Stack Developer | Security Enthusiast
             </h3>
             <p className="text-slate-400 max-w-xl text-lg leading-relaxed">
@@ -46,9 +46,9 @@ export default function Hero() {
           </div>
 
           <div className="flex gap-6 mt-12 text-slate-400">
-            <a href="https://github.com/rushdv/" className="hover:text-cyan-500 hover:-translate-y-1 transition-all"><Github size={24} /></a>
-            <a href="https://www.linkedin.com/in/shihab-shahriar-rashu-431a3a217/" className="hover:text-cyan-500 hover:-translate-y-1 transition-all"><Linkedin size={24} /></a>
-            <a href="https://twitter.com/rushdv313/" className="hover:text-cyan-500 hover:-translate-y-1 transition-all"><Twitter size={24} /></a>
+            <a href="https://github.com/rushdv/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-500 hover:-translate-y-1 transition-all"><Github size={24} /></a>
+            <a href="https://www.linkedin.com/in/shihab-shahriar-rashu-431a3a217/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-500 hover:-translate-y-1 transition-all"><Linkedin size={24} /></a>
+            <a href="https://twitter.com/rushdv313/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-500 hover:-translate-y-1 transition-all"><Twitter size={24} /></a>
           </div>
         </motion.div>
 
