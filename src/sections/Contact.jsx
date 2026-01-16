@@ -39,8 +39,8 @@ export default function Contact() {
                     className="text-center mb-16"
                 >
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-500 text-sm font-medium mb-4">
-                        <Terminal size={14} />
-                        <span>contact.js</span>
+                        <Mail size={14} />
+                        <span>Contact</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold text-slate-100 mb-6">
                         Get In <span className="text-cyan-500">Touch</span>
@@ -64,7 +64,7 @@ export default function Contact() {
                         <div className="grid gap-6">
                             {[
                                 { icon: Mail, label: "Email", value: "shihab.zn4@gmail.com", type: "email" },
-                                { icon: Phone, label: "Phone", value: "+880 1000 000000", type: "phone" },
+                                { icon: Phone, label: "Phone", value: "+880 1600 350566", type: "phone" },
                                 { icon: MapPin, label: "Location", value: "Dhaka, Bangladesh", type: "location" }
                             ].map((item, index) => (
                                 <div
@@ -94,131 +94,63 @@ export default function Contact() {
                         </div>
                     </motion.div>
 
-                    {/* Terminal Style Form */}
+                    {/* Simple Message Form */}
                     <motion.div
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className="bg-slate-900 rounded-xl overflow-hidden border border-slate-700 shadow-2xl flex flex-col"
+                        className="bg-slate-800/50 backdrop-blur-sm p-8 rounded-2xl border border-white/5 shadow-xl"
                     >
-                        {/* Terminal Header */}
-                        <div className="bg-slate-800 px-4 py-3 border-b border-slate-700 flex items-center justify-between">
-                            <div className="flex items-center gap-2">
-                                <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                        <h3 className="text-2xl font-bold text-slate-100 mb-6">Send a Message</h3>
+                        <form className="space-y-6">
+                            <div className="space-y-2">
+                                <label htmlFor="name" className="text-slate-400 text-sm font-medium">Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    value={formState.name}
+                                    onChange={handleChange}
+                                    placeholder="Your Name"
+                                    className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all duration-300"
+                                />
                             </div>
-                            <div className="text-slate-400 text-xs font-mono">sendMessage.ts</div>
-                            <div className="w-12"></div> {/* Spacer for centering */}
-                        </div>
 
-                        {/* Terminal Body */}
-                        <div className="p-6 md:p-8 font-mono relative flex-1 bg-slate-900/90 backdrop-blur-sm">
-                            <form className="space-y-4">
-                                <div className="flex gap-4">
-                                    <span className="text-slate-600 select-none">01</span>
-                                    <div className="w-full">
-                                        <span className="text-purple-400">const</span> <span className="text-blue-400">user</span> = <span className="text-yellow-400">{"{"}</span>
-                                    </div>
-                                </div>
+                            <div className="space-y-2">
+                                <label htmlFor="email" className="text-slate-400 text-sm font-medium">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    value={formState.email}
+                                    onChange={handleChange}
+                                    placeholder="your@email.com"
+                                    className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all duration-300"
+                                />
+                            </div>
 
-                                <div className="flex gap-4 items-center">
-                                    <span className="text-slate-600 select-none">02</span>
-                                    <div className="w-full flex items-center">
-                                        <span className="text-slate-400 pl-4 w-24">name:</span>
-                                        <span className="text-green-400">"</span>
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            value={formState.name}
-                                            onChange={handleChange}
-                                            placeholder="Your Name"
-                                            className="bg-transparent border-none text-green-400 placeholder-slate-600 focus:ring-0 p-0 w-full outline-none font-mono"
-                                        />
-                                        <span className="text-green-400">",</span>
-                                    </div>
-                                </div>
+                            <div className="space-y-2">
+                                <label htmlFor="message" className="text-slate-400 text-sm font-medium">Message</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    value={formState.message}
+                                    onChange={handleChange}
+                                    rows={4}
+                                    placeholder="How can I help you?"
+                                    className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all duration-300 resize-none"
+                                ></textarea>
+                            </div>
 
-                                <div className="flex gap-4 items-center">
-                                    <span className="text-slate-600 select-none">03</span>
-                                    <div className="w-full flex items-center">
-                                        <span className="text-slate-400 pl-4 w-24">email:</span>
-                                        <span className="text-green-400">"</span>
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            value={formState.email}
-                                            onChange={handleChange}
-                                            placeholder="your@email.com"
-                                            className="bg-transparent border-none text-green-400 placeholder-slate-600 focus:ring-0 p-0 w-full outline-none font-mono"
-                                        />
-                                        <span className="text-green-400">",</span>
-                                    </div>
-                                </div>
-
-                                <div className="flex gap-4">
-                                    <span className="text-slate-600 select-none">04</span>
-                                    <div className="w-full">
-                                        <span className="text-yellow-400">{"}"}</span>;
-                                    </div>
-                                </div>
-
-                                <div className="flex gap-4">
-                                    <span className="text-slate-600 select-none">05</span>
-                                    <div className="w-full">
-                                    </div>
-                                </div>
-
-                                <div className="flex gap-4">
-                                    <span className="text-slate-600 select-none">06</span>
-                                    <div className="w-full">
-                                        <span className="text-purple-400">const</span> <span className="text-blue-400">message</span> = <span className="text-green-400">`</span>
-                                    </div>
-                                </div>
-
-                                <div className="flex gap-4">
-                                    <span className="text-slate-600 select-none">07</span>
-                                    <div className="w-full">
-                                        <textarea
-                                            name="message"
-                                            value={formState.message}
-                                            onChange={handleChange}
-                                            rows={4}
-                                            placeholder="Write your message here..."
-                                            className="w-full bg-transparent border-none text-slate-300 placeholder-slate-600 focus:ring-0 p-0 outline-none font-mono resize-none pl-4 leading-relaxed"
-                                        ></textarea>
-                                    </div>
-                                </div>
-
-                                <div className="flex gap-4">
-                                    <span className="text-slate-600 select-none">08</span>
-                                    <div className="w-full">
-                                        <span className="text-green-400">`</span>;
-                                    </div>
-                                </div>
-
-                                <div className="flex gap-4">
-                                    <span className="text-slate-600 select-none">09</span>
-                                    <div className="w-full">
-                                    </div>
-                                </div>
-
-                                <div className="flex gap-4">
-                                    <span className="text-slate-600 select-none">10</span>
-                                    <div className="w-full pt-2">
-                                        <button
-                                            type="button"
-                                            className="group flex items-center gap-2 bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-500 px-4 py-2 rounded-lg font-mono text-sm transition-all border border-cyan-500/30 hover:border-cyan-500/50"
-                                        >
-                                            <span>sendMessage(user, message)</span>
-                                            <Send size={14} className="group-hover:translate-x-1 transition-transform" />
-                                        </button>
-                                    </div>
-                                </div>
-
-                            </form>
-                        </div>
+                            <button
+                                type="button"
+                                className="w-full bg-cyan-500 text-slate-900 font-bold py-3 px-6 rounded-lg hover:bg-cyan-400 transition-colors duration-300 flex items-center justify-center gap-2"
+                            >
+                                <span>Send Message</span>
+                                <Send size={18} />
+                            </button>
+                        </form>
                     </motion.div>
                 </div>
             </div>
