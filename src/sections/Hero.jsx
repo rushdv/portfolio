@@ -18,7 +18,7 @@ export default function Hero() {
               Hi, I'm
             </h2>
             <h1 className="text-5xl md:text-7xl font-bold text-slate-100 tracking-tight">
-              Shihab.
+              Shihab Shahriar Rashu
             </h1>
             <h3 className="text-4xl md:text-5xl font-bold text-slate-400">
               Computer Science Student | Full-Stack Developer | Security Enthusiast
