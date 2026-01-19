@@ -13,18 +13,34 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
-          <div className="space-y-4">
-            <h2 className="text-cyan-500 font-medium text-lg tracking-wide">
-              Hi, I'm
-            </h2>
-            <h1 className="text-5xl md:text-7xl font-bold text-slate-100 tracking-tight">
-              Shihab Shahriar Rashu
-            </h1>
-            <h3 className="text-4xl md:text-5xl font-bold text-slate-400">
+          <div className="space-y-6">
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-500 text-xs font-mono"
+            >
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+              </span>
+              Available for work
+            </motion.div>
+
+            <div className="space-y-2">
+              <h2 className="text-cyan-500 font-medium text-lg tracking-wide">
+                Hi, I'm
+              </h2>
+              <h1 className="text-5xl md:text-7xl font-bold text-slate-100 tracking-tight leading-tight">
+                Shihab Shahriar <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Rashu</span>
+              </h1>
+            </div>
+
+            <h3 className="text-3xl md:text-4xl font-bold text-slate-400 max-w-2xl">
               Computer Science Student | Full-Stack Developer | Security Enthusiast
             </h3>
             <p className="text-slate-400 max-w-xl text-lg leading-relaxed">
-              Building clean, scalable, and secure systems with modern technologies.
+              Building clean, scalable, and secure systems with modern technologies. Based in Bangladesh.
             </p>
           </div>
 

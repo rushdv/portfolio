@@ -18,7 +18,7 @@ export default function Skills() {
                     transition={{ duration: 0.6 }}
                 >
                     <h2 className="flex items-center text-3xl font-bold text-slate-100 mb-12">
-                        <span className="text-cyan-500 mr-2">03.</span> Skills & Technologies
+                        <span className="text-cyan-500 mr-2">04.</span> Skills & Technologies
                     </h2>
 
                     <div className="grid md:grid-cols-2 gap-8">

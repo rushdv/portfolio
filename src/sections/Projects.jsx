@@ -3,23 +3,29 @@ import { Github, ExternalLink, Folder } from "lucide-react";
 
 const projects = [
     {
-        title: "Project One",
-        description: "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information of each track.",
-        tags: ["React", "Express", "Spotify API", "Styled Components"],
-        github: "#",
+        title: "SecurePass Manager",
+        description: "A secure, encrypted password manager built with React and advanced cryptographic libraries. Features local storage encryption and a clean UI.",
+        tags: ["React", "CryptoJS", "Tailwind CSS", "Framer Motion"],
+        duration: "3 Months",
+        team: "Solo Project",
+        github: "https://github.com/rushdv/securepass",
         live: "#"
     },
     {
-        title: "Project Two",
-        description: "A nice and fresh start for a new portfolio site. Built with React and Tailwind CSS. Fully responsive and accessible.",
-        tags: ["React", "Tailwind CSS", "Framer Motion"],
-        github: "#",
-        live: "#"
+        title: "Portfolio v2",
+        description: "A premium, dark-themed portfolio website with smooth animations, glassmorphism, and optimized performance.",
+        tags: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+        duration: "1 Month",
+        team: "Solo Project",
+        github: "https://github.com/rushdv/portfolio",
+        live: "https://portfolio-rush.vercel.app"
     },
     {
-        title: "Project Three",
-        description: "Web application that allows users to search for movies and view details about them. Uses the TMDB API.",
-        tags: ["Next.js", "TypeScript", "TMDB API"],
+        title: "E-Commerce Security Dashboard",
+        description: "A specialized dashboard for monitoring security metrics and potential threats on e-commerce platforms.",
+        tags: ["Next.js", "TypeScript", "Node.js", "Prisma"],
+        duration: "4 Months",
+        team: "Team of 3",
         github: "#",
         live: "#"
     }
@@ -37,7 +43,7 @@ export default function Projects() {
                     className="space-y-12"
                 >
                     <h2 className="flex items-center text-3xl font-bold text-slate-100">
-                        <span className="text-cyan-500 mr-2">02.</span> Some Things I've Built
+                        <span className="text-cyan-500 mr-2">03.</span> Some Things I've Built
                     </h2>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -45,29 +51,37 @@ export default function Projects() {
                             <motion.div
                                 key={index}
                                 whileHover={{ y: -10 }}
-                                className="group bg-slate-800 p-8 rounded-xl border border-white/5 hover:border-cyan-500/50 transition-colors shadow-lg"
+                                className="group relative bg-slate-800/40 backdrop-blur-md p-8 rounded-2xl border border-white/5 hover:border-cyan-500/50 transition-all duration-300 shadow-xl overflow-hidden"
                             >
+                                <div className="absolute top-0 right-0 w-24 h-24 bg-cyan-500/5 blur-3xl rounded-full -mr-12 -mt-12 group-hover:bg-cyan-500/10 transition-colors"></div>
+
                                 <div className="flex justify-between items-start mb-6">
                                     <div className="text-cyan-500">
-                                        <Folder size={40} />
+                                        <Folder size={40} strokeWidth={1.5} />
                                     </div>
                                     <div className="flex gap-4 text-slate-400">
-                                        <a href={project.github} className="hover:text-cyan-500 transition-colors"><Github size={20} /></a>
-                                        <a href={project.live} className="hover:text-cyan-500 transition-colors"><ExternalLink size={20} /></a>
+                                        <a href={project.github} className="hover:text-cyan-500 transition-colors" title="GitHub"><Github size={20} /></a>
+                                        <a href={project.live} className="hover:text-cyan-500 transition-colors" title="Live Demo"><ExternalLink size={20} /></a>
                                     </div>
                                 </div>
 
-                                <h3 className="text-xl font-bold text-slate-100 mb-4 group-hover:text-cyan-500 transition-colors">
+                                <h3 className="text-xl font-bold text-slate-100 mb-2 group-hover:text-cyan-500 transition-colors">
                                     {project.title}
                                 </h3>
 
-                                <p className="text-slate-400 mb-8 line-clamp-3">
+                                <div className="flex items-center gap-3 text-[10px] font-mono text-slate-500 mb-4 uppercase tracking-widest">
+                                    <span>{project.duration}</span>
+                                    <span className="w-1 h-1 bg-slate-700 rounded-full"></span>
+                                    <span>{project.team}</span>
+                                </div>
+
+                                <p className="text-slate-400 mb-8 text-sm leading-relaxed line-clamp-3">
                                     {project.description}
                                 </p>
 
-                                <div className="flex flex-wrap gap-3 text-xs font-mono text-slate-500">
+                                <div className="flex flex-wrap gap-2 text-[10px] font-mono text-slate-400">
                                     {project.tags.map((tag) => (
-                                        <span key={tag} className="bg-slate-900/50 px-3 py-1 rounded-full">
+                                        <span key={tag} className="bg-slate-900/80 border border-white/5 px-2 py-1 rounded">
                                             {tag}
                                         </span>
                                     ))}
