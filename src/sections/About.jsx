@@ -19,24 +19,24 @@ export default function About() {
                         <div className="w-20 h-1 bg-cyan-500/50 rounded-full"></div>
 
                         <p className="text-slate-400 text-lg leading-relaxed">
-                            Hello! My name is Shihab and I enjoy creating things that live on the internet. My interest in web development started back in 2020 when I decided to try editing custom Tumblr themes — turns out hacking together HTML & CSS was pretty fun!
+                            I am a dedicated Full-Stack Developer and Security Enthusiast with a passion for building robust, scalable, and secure digital solutions. Currently contributing to <span className="text-cyan-500 font-medium">DevEleven-io</span>, I focus on transforming complex requirements into elegant, high-performance web architectures.
                         </p>
                         <p className="text-slate-400 text-lg leading-relaxed">
-                            Fast-forward to today, and I've had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences.
+                            My journey is driven by a deep curiosity for how things work under the hood, leading me to specialize in both modern web technologies and cybersecurity. I believe that performance and security should go hand-in-hand in every project I build.
                         </p>
 
                         <div className="grid grid-cols-2 gap-4 pt-4 text-sm font-mono text-slate-400">
                             <li className="flex items-center gap-2">
-                                <span className="text-cyan-500">▹</span> React
+                                <span className="text-cyan-500">▹</span> React / Vite
                             </li>
                             <li className="flex items-center gap-2">
-                                <span className="text-cyan-500">▹</span> JavaScript (ES6+)
+                                <span className="text-cyan-500">▹</span> FastAPI / Python
                             </li>
                             <li className="flex items-center gap-2">
-                                <span className="text-cyan-500">▹</span> Node.js
+                                <span className="text-cyan-500">▹</span> PostgreSQL / NeonDB
                             </li>
                             <li className="flex items-center gap-2">
-                                <span className="text-cyan-500">▹</span> Python
+                                <span className="text-cyan-500">▹</span> Cybersecurity Auditing
                             </li>
                         </div>
                     </div>
@@ -48,19 +48,19 @@ export default function About() {
                             <div className="grid grid-cols-2 gap-8">
                                 <div className="space-y-2">
                                     <div className="text-4xl font-bold text-cyan-500">5+</div>
-                                    <div className="text-sm text-slate-400 font-mono">Years of Experience</div>
+                                    <div className="text-sm text-slate-400 font-mono">Years Building</div>
                                 </div>
                                 <div className="space-y-2">
-                                    <div className="text-4xl font-bold text-cyan-500">10+</div>
-                                    <div className="text-sm text-slate-400 font-mono">Projects Completed</div>
+                                    <div className="text-4xl font-bold text-cyan-500">15+</div>
+                                    <div className="text-sm text-slate-400 font-mono">Projects Done</div>
                                 </div>
                                 <div className="space-y-2">
-                                    <div className="text-4xl font-bold text-cyan-500">5+</div>
-                                    <div className="text-sm text-slate-400 font-mono">Happy Clients</div>
+                                    <div className="text-4xl font-bold text-cyan-500">300+</div>
+                                    <div className="text-sm text-slate-400 font-mono">Commits</div>
                                 </div>
                                 <div className="space-y-2">
-                                    <div className="text-4xl font-bold text-cyan-500">24/7</div>
-                                    <div className="text-sm text-slate-400 font-mono">Support</div>
+                                    <div className="text-4xl font-bold text-cyan-500">100%</div>
+                                    <div className="text-sm text-slate-400 font-mono">Security Focus</div>
                                 </div>
                             </div>
                         </div>

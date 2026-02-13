@@ -3,6 +3,60 @@ import { Github, ExternalLink, Folder } from "lucide-react";
 
 const projects = [
     {
+        title: "Muhasabah",
+        description: "A faith-centered self-reflection and habit tracking platform inspired by the concept of daily accountability in Islam.",
+        tags: ["React", "FastAPI", "PostgreSQL", "Tailwind CSS"],
+        duration: "4 Months",
+        team: "Solo Project",
+        github: "https://github.com/rushdv/muhasabah",
+        live: "https://muhasabah.vercel.app"
+    },
+    {
+        title: "NetScope-Live",
+        description: "A real-time network traffic visualizer with a cyberpunk UI. Bridges the gap between low-level network operations and high-level visualization.",
+        tags: ["Python", "Scapy", "React", "WebSockets"],
+        duration: "2 Months",
+        team: "Solo Project",
+        github: "https://github.com/rushdv/NetScope-Live",
+        live: "#"
+    },
+    {
+        title: "Nexum",
+        description: "A modern, secure, and scalable social media platform designed for high performance and minimal UI.",
+        tags: ["React", "Vite", "Tailwind CSS", "DaisyUI"],
+        duration: "3 Months",
+        team: "Solo Project",
+        github: "https://github.com/rushdv/nexum",
+        live: "#"
+    },
+    {
+        title: "DebugAI",
+        description: "An AI-powered CLI that helps you debug errors directly from the terminal using Gemini 2.5 Flash.",
+        tags: ["Python", "Gemini AI", "CLI", "Pip"],
+        duration: "1 Month",
+        team: "Solo Project",
+        github: "https://github.com/rushdv/debug-ai",
+        live: "#"
+    },
+    {
+        title: "Brain Vault",
+        description: "The core memory bank for all technical intelligence. Archiving algorithms, cybersecurity research, and architectural blueprints.",
+        tags: ["React", "Vercel", "Vite", "Technical Writing"],
+        duration: "Ongoing",
+        team: "Solo Project",
+        github: "https://github.com/rushdv/brain-vault",
+        live: "https://brain-vault-iota.vercel.app/"
+    },
+    {
+        title: "Encrypted Password Manager",
+        description: "A security-focused password manager demonstrating encryption, hashing, and secure file handling in Python.",
+        tags: ["Python", "Cryptography", "Security", "CLI"],
+        duration: "2 Months",
+        team: "Solo Project",
+        github: "https://github.com/rushdv/encrypted-password-manager",
+        live: "#"
+    },
+    {
         title: "SecurePass Manager",
         description: "A secure, encrypted password manager built with React and advanced cryptographic libraries. Features local storage encryption and a clean UI.",
         tags: ["React", "CryptoJS", "Tailwind CSS", "Framer Motion"],
