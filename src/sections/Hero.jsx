@@ -24,7 +24,7 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
               </span>
-              Available for work
+              Open for Collaborations
             </motion.div>
 
             <div className="space-y-2">
@@ -40,31 +40,31 @@ export default function Hero() {
               Computer Science Student | Full-Stack Developer | Security Enthusiast
             </h3>
             <p className="text-slate-400 max-w-xl text-lg leading-relaxed">
-              Building clean, scalable, and secure systems with modern technologies. Based in Bangladesh.
+              Building secure, high-performance systems with a focus on modern web architectures and defensive computing.
             </p>
           </div>
 
           <div className="flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="group flex items-center gap-2 px-8 py-4 bg-cyan-500 text-slate-900 font-bold rounded-lg hover:bg-cyan-400 transition-all duration-300"
+              className="group flex items-center gap-2 px-8 py-4 bg-cyan-500 text-slate-900 font-bold rounded-lg hover:bg-cyan-400 transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.3)] hover:shadow-[0_0_30px_rgba(6,182,212,0.5)]"
             >
-              Check out my work
-              <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+              Explore Projects
+              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </a>
             <a
               href="#"
               className="flex items-center gap-2 px-8 py-4 border border-cyan-500/30 text-cyan-500 font-bold rounded-lg hover:bg-cyan-500/10 transition-all duration-300"
             >
-              Resume
+              View Resume
               <Download size={20} />
             </a>
           </div>
 
           <div className="flex gap-6 mt-12 text-slate-400">
-            <a href="https://github.com/rushdv/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-500 hover:-translate-y-1 transition-all"><Github size={24} /></a>
-            <a href="https://www.linkedin.com/in/shihab-shahriar-rashu-431a3a217/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-500 hover:-translate-y-1 transition-all"><Linkedin size={24} /></a>
-            <a href="https://twitter.com/rushdv313/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-500 hover:-translate-y-1 transition-all"><Twitter size={24} /></a>
+            <a href="https://github.com/rushdv/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-500 hover:-translate-y-1 transition-all" title="GitHub"><Github size={24} /></a>
+            <a href="https://www.linkedin.com/in/shihab-shahriar-rashu-431a3a217/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-500 hover:-translate-y-1 transition-all" title="LinkedIn"><Linkedin size={24} /></a>
+            <a href="https://twitter.com/rushdv313/" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-500 hover:-translate-y-1 transition-all" title="Twitter"><Twitter size={24} /></a>
           </div>
         </motion.div>
 
@@ -76,33 +76,39 @@ export default function Hero() {
           className="hidden md:block relative"
         >
           <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 opacity-20 blur-xl"></div>
-          <div className="relative bg-slate-800 rounded-2xl border border-slate-700 p-6 overflow-hidden shadow-2xl">
-            <div className="flex gap-2 mb-4">
-              <div className="w-3 h-3 rounded-full bg-red-500"></div>
-              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-              <div className="w-3 h-3 rounded-full bg-green-500"></div>
+          <div className="relative bg-slate-900/80 backdrop-blur-xl rounded-2xl border border-white/10 p-8 overflow-hidden shadow-2xl group transition-all duration-500 hover:border-cyan-500/30">
+            <div className="flex gap-2 mb-6">
+              <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
+              <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+              <div className="w-3 h-3 rounded-full bg-green-500/80"></div>
             </div>
-            <div className="font-mono text-sm space-y-2">
-              <div className="text-pink-400">class <span className="text-yellow-300">Developer</span> {"{"}</div>
-              <div className="pl-4 text-slate-300">
-                <span className="text-purple-400">constructor</span>() {"{"}
+            <div className="font-mono text-sm space-y-3">
+              <div className="text-slate-500 italic mb-2">// Technical Profile</div>
+              <div className="text-pink-400">const <span className="text-slate-100">profile</span> = {"{"}</div>
+              <div className="pl-6 text-slate-300">
+                <span className="text-cyan-400">role</span>: <span className="text-green-400">"Full-Stack Dev"</span>,
               </div>
-              <div className="pl-8 text-slate-300">
-                <span className="text-red-400">this</span>.name = <span className="text-green-400">"Shihab"</span>;
+              <div className="pl-6 text-slate-300">
+                <span className="text-cyan-400">focus</span>: <span className="text-green-400">"Security Architecture"</span>,
               </div>
-              <div className="pl-8 text-slate-300">
-                <span className="text-red-400">this</span>.skills = [
+              <div className="pl-6 text-slate-300">
+                <span className="text-cyan-400">organization</span>: <span className="text-green-400">"DevEleven-io"</span>,
+              </div>
+              <div className="pl-6 text-slate-300">
+                <span className="text-cyan-400">skills</span>: [
               </div>
               <div className="pl-12 text-slate-300">
-                <span className="text-green-400">"Full-Stack"</span>, <span className="text-green-400">"Security"</span>, <span className="text-green-400">"Web"</span>
+                <span className="text-green-400">"React"</span>, <span className="text-green-400">"Python"</span>, <span className="text-green-400">"FastAPI"</span>
               </div>
-              <div className="pl-8 text-slate-300">];</div>
-              <div className="pl-8 text-slate-300">
-                <span className="text-red-400">this</span>.coffee = <span className="text-orange-400">true</span>;
+              <div className="pl-6 text-slate-300">],</div>
+              <div className="pl-6 text-slate-300">
+                <span className="text-cyan-400">status</span>: <span className="text-orange-400">"Innovating"</span>
               </div>
-              <div className="pl-4 text-slate-300">{"}"}</div>
-              <div className="text-slate-300">{"}"}</div>
+              <div className="text-pink-400">{"};"}</div>
             </div>
+
+            {/* Subtle glow effect */}
+            <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 blur-[50px] rounded-full group-hover:bg-cyan-500/20 transition-all duration-700"></div>
           </div>
         </motion.div>
       </div>

@@ -3,28 +3,28 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
     {
-        title: "Full-Stack Developer",
-        company: "Tech Solutions Inc.",
-        location: "Remote",
-        period: "2023 - Present",
-        description: "Leading the development of scalable web applications using React and Node.js. Implementing security best practices and mentoring junior developers.",
-        skills: ["React", "Node.js", "PostgreSQL", "AWS"]
-    },
-    {
-        title: "Junior Web Developer",
-        company: "Creative Agency",
-        location: "Dhaka, Bangladesh",
-        period: "2021 - 2023",
-        description: "Developed and maintained multiple client websites. Collaborated with designers to implement pixel-perfect user interfaces.",
-        skills: ["JavaScript", "HTML/CSS", "PHP", "Tailwind CSS"]
+        title: "Web Developer",
+        company: "DevEleven-io",
+        location: "Remote / GitHub Organization",
+        period: "2024 - Present",
+        description: "Specialized in full-stack implementation and security-centric architectures. Collaboratively delivering high-performance web applications and participating in open-source development within the organization.",
+        skills: ["React", "Vite", "Tailwind CSS", "API Development"]
     },
     {
         title: "Computer Science Student",
         company: "University",
         location: "Bangladesh",
         period: "2020 - Present",
-        description: "Focusing on core CS principles, algorithms, and cybersecurity. Maintaining a 3.8+ GPA.",
-        skills: ["Algorithms", "Data Structures", "Network Security", "Python"]
+        description: "Mastering core principles of Computer Science, with a heavy focus on Algorithms, Data Structures, and Network Security. Actively building a diverse portfolio of security tools and web platforms.",
+        skills: ["Algorithms", "Python", "Network Security", "Databases"]
+    },
+    {
+        title: "Open Source Contributor",
+        company: "Various Projects",
+        location: "GitHub",
+        period: "2022 - Present",
+        description: "Actively contributing to various open-source projects, improving code quality, and implementing new features. Focused on building tools that simplify debugging and enhance security.",
+        skills: ["Git", "System Design", "JavaScript", "Security Auditing"]
     }
 ];
 
