@@ -14,7 +14,7 @@ const experiences = [
         title: "Computer Science Student",
         company: "University",
         location: "Bangladesh",
-        period: "2020 - Present",
+        period: "2025 - Present",
         description: "Mastering core principles of Computer Science, with a heavy focus on Algorithms, Data Structures, and Network Security. Actively building a diverse portfolio of security tools and web platforms.",
         skills: ["Algorithms", "Python", "Network Security", "Databases"]
     },
