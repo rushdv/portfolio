@@ -47,7 +47,7 @@ export default function About({ theme }) {
                     {/* Interactive Stats Grid */}
                     <div className="grid grid-cols-2 gap-4">
                         {[
-                            { label: "Experience", value: "3+", sub: "Years" },
+                            { label: "Experience", value: "5+", sub: "Years" },
                             { label: "Completed", value: "20+", sub: "Projects" },
                             { label: "Security", value: "100%", sub: "Resilience" },
                             { label: "Uptime", value: "99.9%", sub: "Reliability" }

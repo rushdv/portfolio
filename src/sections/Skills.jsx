@@ -39,8 +39,8 @@ export default function Skills({ theme }) {
                             >
                                 <div className={`${theme === 'dark' ? 'mb-6' : 'mb-8'} flex items-center justify-between`}>
                                     <h3 className={`${theme === 'dark' ? 'text-lg' : 'text-xl'} font-bold text-[var(--text-primary)] tracking-wide uppercase font-mono`}>{category}</h3>
-                                    <div className={`${theme === 'dark' ? 'w-8 h-8 rounded-full bg-cyan-500/10' : 'w-10 h-10 rounded-2xl bg-gradient-to-br from-cyan-500 to-blue-600 shadow-md group-hover:rotate-6'} flex items-center justify-center transition-all duration-500`}>
-                                        <div className={`${theme === 'dark' ? 'w-2 h-2 bg-cyan-500 group-hover:scale-150 rounded-full' : 'w-2.5 h-2.5 bg-slate-950 rounded-full'} transition-all`}></div>
+                                    <div className={`${theme === 'dark' ? 'w-8 h-8 rounded-full bg-cyan-500/10' : 'w-10 h-10 rounded-2xl bg-cyan-500/10 group-hover:scale-110'} flex items-center justify-center transition-all duration-500`}>
+                                        <div className={`${theme === 'dark' ? 'w-2 h-2 bg-cyan-500 group-hover:scale-150 rounded-full' : 'w-2.5 h-2.5 bg-cyan-500 group-hover:scale-125 rounded-full'} transition-all`}></div>
                                     </div>
                                 </div>
                                 <div className="flex flex-wrap gap-2 mt-auto">
