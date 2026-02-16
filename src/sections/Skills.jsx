@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import TextDecrypt from "../components/TextDecrypt";
 
 const skills = {
     Frontend: ["HTML5/CSS3", "React/Next.js", "Tailwind CSS", "Framer Motion", "TypeScript", "JavaScript"],
@@ -19,7 +20,7 @@ export default function Skills({ theme }) {
                 >
                     <div className="flex flex-col items-center text-center mb-16 space-y-4">
                         <h2 className="flex items-center text-4xl font-black text-[var(--text-primary)] uppercase tracking-[0.2em]">
-                            <span className="text-cyan-500 mr-4 font-mono text-2xl opacity-60">02.</span> Technical <span className="ml-3 text-gradient">Stack</span>
+                            <span className="text-cyan-500 mr-4 font-mono text-2xl opacity-60">02.</span> <TextDecrypt text="Technical" /> <span className="ml-3 text-gradient"><TextDecrypt text="Stack" delay={500} /></span>
                         </h2>
                         <div className="w-24 h-1.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"></div>
                         <p className="text-[var(--text-secondary)] max-w-2xl font-light text-lg">

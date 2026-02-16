@@ -7,6 +7,7 @@ import Experience from '../sections/Experience';
 import Contact from '../sections/Contact';
 import Footer from '../components/Footer';
 import CommandConsole from '../components/CommandConsole';
+import SystemTicker from '../components/SystemTicker';
 import { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -22,7 +23,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pb-8">
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <Hero theme={theme} />
       <About theme={theme} />
@@ -32,6 +33,7 @@ export default function Home() {
       <Contact theme={theme} />
       <Footer theme={theme} />
       <CommandConsole />
+      <SystemTicker />
     </main>
   );
 }
