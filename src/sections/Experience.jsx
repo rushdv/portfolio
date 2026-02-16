@@ -3,28 +3,28 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
     {
-        title: "Web Developer",
+        title: "Systems Engineer",
         company: "DevEleven-io",
-        location: "Remote / GitHub Organization",
+        location: "Infrastructure & Web",
         period: "2024 - Present",
-        description: "Specialized in full-stack implementation and security-centric architectures. Collaboratively delivering high-performance web applications and participating in open-source development within the organization.",
-        skills: ["React", "Vite", "Tailwind CSS", "API Development"]
+        description: "Engineering scalable full-stack architectures with a core focus on security-first implementation and system resilience. Developing high-concurrency microservices and optimizing architectural integrity within organizational workflows.",
+        skills: ["React", "Infrastructure", "API Design", "Security"]
     },
     {
-        title: "Computer Science Student",
-        company: "University",
+        title: "Computer Science Researcher",
+        company: "University of Science",
         location: "Bangladesh",
         period: "2025 - Present",
-        description: "Mastering core principles of Computer Science, with a heavy focus on Algorithms, Data Structures, and Network Security. Actively building a diverse portfolio of security tools and web platforms.",
-        skills: ["Algorithms", "Python", "Network Security", "Databases"]
+        description: "Mastering core theoretical foundations with focused research into Network Security frameworks and optimized Data Structures. Implementing low-level technical intelligence for offensive and defensive security modules.",
+        skills: ["Algorithms", "Python", "Network Architecture", "Security Auditing"]
     },
     {
-        title: "Open Source Contributor",
-        company: "Various Projects",
-        location: "GitHub",
+        title: "Technical Architect (Open Source)",
+        company: "GitHub Community",
+        location: "Global Distributed",
         period: "2022 - Present",
-        description: "Actively contributing to various open-source projects, improving code quality, and implementing new features. Focused on building tools that simplify debugging and enhance security.",
-        skills: ["Git", "System Design", "JavaScript", "Security Auditing"]
+        description: "Contributing to low-level system utilities and security tools. Focused on hardening infrastructure and auditing core codebase integrity for high-impact open-source environments.",
+        skills: ["System Design", "Audit", "CI/CD", "Secure Coding"]
     }
 ];
 
@@ -75,7 +75,7 @@ export default function Experience({ theme }) {
                                     </div>
 
                                     <p className="text-[var(--text-secondary)] text-sm leading-relaxed mb-8 font-light italic">
-                                        "{exp.description}"
+                                        {exp.description}
                                     </p>
 
                                     <div className="flex flex-wrap gap-2">

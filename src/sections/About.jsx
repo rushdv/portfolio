@@ -22,10 +22,10 @@ export default function About({ theme }) {
 
                         <div className="space-y-6 text-[var(--text-secondary)] text-lg leading-relaxed font-light">
                             <p>
-                                I am a passionate <span className="text-[var(--text-primary)] font-medium">Full-Stack Developer</span> and Security Enthusiast focused on building robust, scalable, and secure digital ecosystems. Currently at <span className="text-cyan-500 hover:underline cursor-pointer font-medium">DevEleven-io</span>, I specialize in modern web architectures and defensive computing.
+                                I specialize in the design and implementation of <span className="text-[var(--text-primary)] font-medium">secure digital ecosystems</span>. Currently engineering high-performance solutions at <span className="text-cyan-500 hover:underline cursor-pointer font-medium">DevEleven-io</span>, my work focuses on the intersection of scalable architecture and defensive computing.
                             </p>
                             <p>
-                                My methodology revolves around the synergy of <span className="text-[var(--text-primary)] font-medium">performance</span> and <span className="text-[var(--text-primary)] font-medium">security</span>. I don't just write code; I architect resilient systems that can withstand the complexities of the modern web landscape.
+                                My methodology prioritizes <span className="text-[var(--text-primary)] font-medium">architectural integrity</span> and <span className="text-[var(--text-primary)] font-medium">system resilience</span>. I don't just build applications; I engineer technical environments designed to withstand high-concurrency demands while maintaining zero-trust security standards.
                             </p>
                         </div>
 
@@ -47,10 +47,10 @@ export default function About({ theme }) {
                     {/* Interactive Stats Grid */}
                     <div className="grid grid-cols-2 gap-4">
                         {[
-                            { label: "Experience", value: "5+", sub: "Years" },
-                            { label: "Completed", value: "20+", sub: "Projects" },
-                            { label: "Security", value: "100%", sub: "Resilience" },
-                            { label: "Uptime", value: "99.9%", sub: "Reliability" }
+                            { label: "Systems Built", value: "20+", sub: "Deployments" },
+                            { label: "Architecture", value: "Scalable", sub: "Modular" },
+                            { label: "Security", value: "Hardened", sub: "Encrypted" },
+                            { label: "Integrity", value: "100%", sub: "Resilience" }
                         ].map((stat, i) => (
                             <motion.div
                                 key={stat.label}
