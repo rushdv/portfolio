@@ -33,14 +33,26 @@ export default function Hero({ theme }) {
               Available for hire
             </motion.div>
 
-            <div className="space-y-3">
+
+            <div className="space-y-6">
               <h2 className="text-cyan-400 font-medium text-lg tracking-[0.2em] uppercase font-mono">
-                Hi, I'm
+                <TextDecrypt text="Hi, I'm" />
               </h2>
-              <h1 className="text-7xl md:text-9xl font-black text-[var(--text-primary)] tracking-tight leading-[0.8] mb-2">
-                Shihab <br />
-                <span className="text-gradient">Shahriar</span>
-              </h1>
+
+              {/* Full Name with Premium Design */}
+              <div className="space-y-2">
+                <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-[var(--text-primary)] tracking-tight leading-[0.9]">
+                  <TextDecrypt text="Shihab" delay={300} />
+                </h1>
+                <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tight leading-[0.9]">
+                  <span className="text-gradient">
+                    <TextDecrypt text="Shahriar" delay={600} />
+                  </span>
+                </h1>
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-cyan-500/80 tracking-wide leading-[0.9] font-mono">
+                  <TextDecrypt text="Rashu" delay={900} />
+                </h1>
+              </div>
             </div>
 
             <h3 className="text-2xl md:text-3xl font-semibold text-[var(--text-secondary)] max-w-2xl leading-tight">
