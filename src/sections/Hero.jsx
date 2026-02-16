@@ -20,10 +20,25 @@ export default function Hero({ theme }) {
           className="space-y-8"
         >
           <div className="space-y-6">
+            <h2 className="text-cyan-400 font-medium text-lg tracking-[0.2em] uppercase font-mono">
+              <TextDecrypt text="Hi, I'm" />
+            </h2>
+
+            {/* Full Name - Clean & Aligned */}
+            <div className="space-y-1">
+              <h1 className="text-7xl md:text-9xl font-black text-[var(--text-primary)] tracking-tight leading-none">
+                <TextDecrypt text="Shihab Shahriar" delay={300} />
+              </h1>
+              <h1 className="text-7xl md:text-9xl font-black text-gradient tracking-tight leading-none">
+                <TextDecrypt text="Rashu" delay={800} />
+              </h1>
+            </div>
+
+            {/* Available for hire badge - Better positioned */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
+              transition={{ delay: 1.2 }}
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/5 border border-cyan-500/20 text-cyan-400 text-xs font-mono font-medium"
             >
               <span className="relative flex h-2 w-2">
@@ -32,36 +47,14 @@ export default function Hero({ theme }) {
               </span>
               Available for hire
             </motion.div>
-
-
-            <div className="space-y-6">
-              <h2 className="text-cyan-400 font-medium text-lg tracking-[0.2em] uppercase font-mono">
-                <TextDecrypt text="Hi, I'm" />
-              </h2>
-
-              {/* Full Name with Premium Design */}
-              <div className="space-y-2">
-                <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-[var(--text-primary)] tracking-tight leading-[0.9]">
-                  <TextDecrypt text="Shihab" delay={300} />
-                </h1>
-                <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tight leading-[0.9]">
-                  <span className="text-gradient">
-                    <TextDecrypt text="Shahriar" delay={600} />
-                  </span>
-                </h1>
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-cyan-500/80 tracking-wide leading-[0.9] font-mono">
-                  <TextDecrypt text="Rashu" delay={900} />
-                </h1>
-              </div>
-            </div>
-
-            <h3 className="text-2xl md:text-3xl font-semibold text-[var(--text-secondary)] max-w-2xl leading-tight">
-              Crafting <span className="text-[var(--text-primary)]">secure digital experiences</span> at the intersection of development and defense.
-            </h3>
-            <p className="text-[var(--text-secondary)] max-w-xl text-lg leading-relaxed font-light">
-              Computer Science student and Full-Stack Developer specialized in modern web architectures and <span className="text-cyan-500/80 font-medium">security-first</span> engineering.
-            </p>
           </div>
+
+          <h3 className="text-2xl md:text-3xl font-semibold text-[var(--text-secondary)] max-w-2xl leading-tight">
+            Crafting <span className="text-[var(--text-primary)]">secure digital experiences</span> at the intersection of development and defense.
+          </h3>
+          <p className="text-[var(--text-secondary)] max-w-xl text-lg leading-relaxed font-light">
+            Computer Science student and Full-Stack Developer specialized in modern web architectures and <span className="text-cyan-500/80 font-medium">security-first</span> engineering.
+          </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
             <a
