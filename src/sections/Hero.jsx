@@ -26,23 +26,23 @@ export default function Hero({ theme }) {
             </h2>
 
             {/* Full Name - Premium Design with Gradients */}
-            <div className="space-y-3 relative">
+            <div className="space-y-2 relative">
               {/* Glow effect behind name */}
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-purple-500/20 blur-3xl opacity-30"></div>
 
-              <h1 className="text-7xl md:text-8xl lg:text-[10rem] font-black tracking-tight leading-none relative z-10">
+              <h1 className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none relative z-10">
                 <span className="bg-gradient-to-r from-[var(--text-primary)] via-cyan-400 to-[var(--text-primary)] bg-clip-text text-transparent">
                   <TextDecrypt text="Shihab" delay={300} />
                 </span>
               </h1>
 
-              <h1 className="text-7xl md:text-8xl lg:text-[10rem] font-black tracking-tight leading-none relative z-10">
+              <h1 className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none relative z-10">
                 <span className="bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">
                   <TextDecrypt text="Shahriar" delay={600} />
                 </span>
               </h1>
 
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-wider leading-none font-mono relative z-10">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-wider leading-none font-mono relative z-10">
                 <span className="bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-500 bg-clip-text text-transparent">
                   <TextDecrypt text="Rashu" delay={900} />
                 </span>
