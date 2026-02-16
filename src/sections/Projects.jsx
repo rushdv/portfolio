@@ -85,57 +85,63 @@ const projects = [
     }
 ];
 
-export default function Projects() {
+export default function Projects({ theme }) {
     return (
-        <section id="projects" className="py-24 bg-slate-900">
-            <div className="max-w-7xl mx-auto px-6">
+        <section id="projects" className="py-24 relative overflow-hidden transition-colors duration-500">
+            <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                    className="space-y-12"
+                    transition={{ duration: 0.8 }}
+                    className="space-y-16"
                 >
-                    <h2 className="flex items-center text-3xl font-bold text-slate-100">
-                        <span className="text-cyan-500 mr-2">03.</span> Some Things I've Built
-                    </h2>
+                    <div className="flex flex-col items-center text-center space-y-4">
+                        <h2 className="flex items-center text-4xl font-black text-[var(--text-primary)] uppercase tracking-[0.2em]">
+                            <span className="text-cyan-500 mr-4 font-mono text-2xl opacity-60">03.</span> Featured <span className="ml-3 text-gradient">Work</span>
+                        </h2>
+                        <div className="w-24 h-1.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"></div>
+                    </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {projects.map((project, index) => (
                             <motion.div
                                 key={index}
-                                whileHover={{ y: -10 }}
-                                className="group relative bg-slate-800/40 backdrop-blur-md p-8 rounded-2xl border border-white/5 hover:border-cyan-500/50 transition-all duration-300 shadow-xl overflow-hidden"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: index * 0.1 }}
+                                className={`group relative glass-card p-8 rounded-[2rem] border-white/5 transition-all duration-500 flex flex-col h-full ${theme === 'dark' ? 'hover:border-cyan-500/20' : 'hover:border-cyan-500/30 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)]'}`}
                             >
-                                <div className="absolute top-0 right-0 w-24 h-24 bg-cyan-500/5 blur-3xl rounded-full -mr-12 -mt-12 group-hover:bg-cyan-500/10 transition-colors"></div>
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 blur-3xl rounded-full -mr-16 -mt-16 group-hover:bg-cyan-500/10 transition-colors duration-700"></div>
 
-                                <div className="flex justify-between items-start mb-6">
-                                    <div className="text-cyan-500">
-                                        <Folder size={40} strokeWidth={1.5} />
+                                <div className="flex justify-between items-start mb-8 relative z-10">
+                                    <div className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-500 ${theme === 'dark' ? 'bg-white/5 text-cyan-400' : 'bg-gradient-to-br from-cyan-500 to-blue-600 text-slate-950 shadow-lg group-hover:rotate-12 group-hover:scale-110'}`}>
+                                        <Folder size={24} strokeWidth={theme === 'dark' ? 1.5 : 2} />
                                     </div>
-                                    <div className="flex gap-4 text-slate-400">
+                                    <div className="flex gap-4 text-[var(--text-secondary)]">
                                         <a href={project.github} className="hover:text-cyan-500 transition-colors" title="GitHub"><Github size={20} /></a>
                                         <a href={project.live} className="hover:text-cyan-500 transition-colors" title="Live Demo"><ExternalLink size={20} /></a>
                                     </div>
                                 </div>
 
-                                <h3 className="text-xl font-bold text-slate-100 mb-2 group-hover:text-cyan-500 transition-colors">
+                                <h3 className="text-xl font-bold text-[var(--text-primary)] mb-2 group-hover:text-cyan-500 transition-colors duration-300 relative z-10">
                                     {project.title}
                                 </h3>
 
-                                <div className="flex items-center gap-3 text-[10px] font-mono text-slate-500 mb-4 uppercase tracking-widest">
+                                <div className="flex items-center gap-3 text-[10px] font-mono text-[var(--text-secondary)] mb-6 uppercase tracking-widest relative z-10">
                                     <span>{project.duration}</span>
-                                    <span className="w-1 h-1 bg-slate-700 rounded-full"></span>
+                                    <div className="w-1 h-1 bg-[var(--card-border)] rounded-full"></div>
                                     <span>{project.team}</span>
                                 </div>
 
-                                <p className="text-slate-400 mb-8 text-sm leading-relaxed line-clamp-3">
+                                <p className="text-[var(--text-secondary)] mb-8 text-sm leading-relaxed font-light line-clamp-4 relative z-10">
                                     {project.description}
                                 </p>
 
-                                <div className="flex flex-wrap gap-2 text-[10px] font-mono text-slate-400">
+                                <div className="flex flex-wrap gap-2 mt-auto relative z-10">
                                     {project.tags.map((tag) => (
-                                        <span key={tag} className="bg-slate-900/80 border border-white/5 px-2 py-1 rounded">
+                                        <span key={tag} className="px-2.5 py-1 bg-white/5 text-[var(--text-secondary)] text-[10px] font-mono rounded-lg border border-white/5 group-hover:text-[var(--text-primary)] group-hover:border-white/10 transition-all">
                                             {tag}
                                         </span>
                                     ))}
@@ -146,5 +152,6 @@ export default function Projects() {
                 </motion.div>
             </div>
         </section>
+
     );
 }

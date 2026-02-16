@@ -9,14 +9,14 @@ const socials = [
     { icon: <Instagram size={20} />, href: "#", label: "Instagram" }
 ];
 
-export default function SocialDock() {
+export default function SocialDock({ theme }) {
     return (
         <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
             <motion.div
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1, duration: 0.5 }}
-                className="flex items-center gap-2 p-2 bg-slate-800/40 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl"
+                className="flex items-center gap-2 p-2 bg-[var(--bg-primary)]/40 backdrop-blur-xl border border-[var(--card-border)] rounded-2xl shadow-2xl transition-colors duration-500"
             >
                 {socials.map((social, index) => (
                     <motion.a
@@ -25,7 +25,7 @@ export default function SocialDock() {
                         target="_blank"
                         rel="noopener noreferrer"
                         whileHover={{ y: -4, scale: 1.1 }}
-                        className="p-3 text-slate-400 hover:text-cyan-500 hover:bg-cyan-500/10 rounded-xl transition-all duration-200"
+                        className="p-3 text-[var(--text-secondary)] hover:text-cyan-500 hover:bg-cyan-500/10 rounded-xl transition-all duration-200"
                         title={social.label}
                     >
                         {social.icon}
