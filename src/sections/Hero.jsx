@@ -97,22 +97,22 @@ export default function Hero({ theme }) {
                 # Technical Manifesto
               </div>
 
-              <div className="space-y-1.5 rounded-xl bg-slate-950/20 p-5 border border-white/5 backdrop-blur-sm shadow-2xl">
-                <p className="text-blue-400">class <span className="text-yellow-400 font-bold">ShihabShahriar</span>:</p>
+              <div className={`space-y-1.5 rounded-xl p-5 border backdrop-blur-sm shadow-2xl transition-all duration-500 ${theme === 'dark' ? 'bg-slate-950/20 border-white/5' : 'bg-slate-900 border-slate-800'}`}>
+                <p className={`${theme === 'dark' ? 'text-blue-400' : 'text-blue-300'}`}>class <span className={`${theme === 'dark' ? 'text-yellow-400' : 'text-yellow-500'} font-bold`}>ShihabShahriar</span>:</p>
                 <div className="pl-6 space-y-1">
-                  <p className="text-blue-400">def <span className="text-yellow-200">__init__</span>(<span className="text-orange-400">self</span>):</p>
+                  <p className={`${theme === 'dark' ? 'text-blue-400' : 'text-blue-300'}`}>def <span className={`${theme === 'dark' ? 'text-yellow-200' : 'text-yellow-400'}`}>__init__</span>(<span className="text-orange-400">self</span>):</p>
                   <div className="pl-6 text-[12px] space-y-1">
-                    <p className="text-[var(--text-primary)]"><span className="text-orange-400">self</span>.<span className="text-cyan-400">role</span> = <span className="text-emerald-400">"Full Stack Developer"</span></p>
-                    <p className="text-[var(--text-primary)]"><span className="text-orange-400">self</span>.<span className="text-cyan-400">alias</span> = <span className="text-emerald-400">"Security Enthusiast"</span></p>
-                    <p className="text-[var(--text-primary)]"><span className="text-orange-400">self</span>.<span className="text-cyan-400">status</span> = <span className="text-emerald-400">"CS Student"</span></p>
-                    <p className="text-[var(--text-primary)]"><span className="text-orange-400">self</span>.<span className="text-cyan-400">mindset</span> = <span className="text-emerald-400">"Tech Enthusiast"</span></p>
+                    <p className={`${theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100'}`}><span className="text-orange-400">self</span>.<span className="text-cyan-400">role</span> = <span className="text-emerald-400">"Full Stack Developer"</span></p>
+                    <p className={`${theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100'}`}><span className="text-orange-400">self</span>.<span className="text-cyan-400">alias</span> = <span className="text-emerald-400">"Security Enthusiast"</span></p>
+                    <p className={`${theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100'}`}><span className="text-orange-400">self</span>.<span className="text-cyan-400">status</span> = <span className="text-emerald-400">"CS Student"</span></p>
+                    <p className={`${theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100'}`}><span className="text-orange-400">self</span>.<span className="text-cyan-400">mindset</span> = <span className="text-emerald-400">"Tech Enthusiast"</span></p>
                   </div>
                 </div>
 
                 <div className="pl-6 pt-3">
-                  <p className="text-blue-400">def <span className="text-yellow-200">get_expertise</span>(<span className="text-orange-400">self</span>):</p>
+                  <p className={`${theme === 'dark' ? 'text-blue-400' : 'text-blue-300'}`}>def <span className={`${theme === 'dark' ? 'text-yellow-200' : 'text-yellow-400'}`}>get_expertise</span>(<span className="text-orange-400">self</span>):</p>
                   <div className="pl-6 text-[12px]">
-                    <p className="text-purple-400">return <span className="text-cyan-400">[</span></p>
+                    <p className={`${theme === 'dark' ? 'text-purple-400' : 'text-purple-300'}`}>return <span className="text-cyan-400">[</span></p>
                     <div className="pl-6 flex flex-col text-emerald-400/90 italic">
                       <span>"Secure_Web_Architecture",</span>
                       <span>"Penetration_Testing",</span>
