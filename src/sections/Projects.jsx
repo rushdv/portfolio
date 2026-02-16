@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Github, ExternalLink, Folder } from "lucide-react";
+import TextDecrypt from "../components/TextDecrypt";
 
 const projects = [
     {
@@ -96,52 +97,59 @@ export default function Projects({ theme }) {
                     transition={{ duration: 0.8 }}
                     className="flex flex-col items-center text-center mb-20 space-y-4"
                 >
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    className={`group relative glass-card p-8 rounded-[2rem] border-white/5 transition-all duration-500 flex flex-col h-full ${theme === 'dark' ? 'hover:border-cyan-500/20' : 'hover:border-cyan-500/30 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)]'}`}
-                            >
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 blur-3xl rounded-full -mr-16 -mt-16 group-hover:bg-cyan-500/10 transition-colors duration-700"></div>
-
-                    <div className="flex justify-between items-start mb-8 relative z-10">
-                        <div className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-500 ${theme === 'dark' ? 'bg-white/5 text-cyan-400 group-hover:bg-white/10' : 'bg-cyan-500/10 text-cyan-500 group-hover:scale-110'}`}>
-                            <Folder size={24} strokeWidth={theme === 'dark' ? 1.5 : 2} />
-                        </div>
-                        <div className="flex gap-4 text-[var(--text-secondary)]">
-                            <a href={project.github} className="hover:text-cyan-500 transition-colors" title="GitHub"><Github size={20} /></a>
-                            <a href={project.live} className="hover:text-cyan-500 transition-colors" title="Live Demo"><ExternalLink size={20} /></a>
-                        </div>
-                    </div>
-
-                    <h3 className="text-xl font-bold text-[var(--text-primary)] mb-2 group-hover:text-cyan-500 transition-colors duration-300 relative z-10">
-                        {project.title}
-                    </h3>
-
-                    <div className="flex items-center gap-3 text-[10px] font-mono text-[var(--text-secondary)] mb-6 uppercase tracking-widest relative z-10">
-                        <span>{project.duration}</span>
-                        <div className="w-1 h-1 bg-[var(--card-border)] rounded-full"></div>
-                        <span>{project.team}</span>
-                    </div>
-
-                    <p className="text-[var(--text-secondary)] mb-8 text-sm leading-relaxed font-light line-clamp-4 relative z-10">
-                        {project.description}
-                    </p>
-
-                    <div className="flex flex-wrap gap-2 mt-auto relative z-10">
-                        {project.tags.map((tag) => (
-                            <span key={tag} className="px-2.5 py-1 bg-white/5 text-[var(--text-secondary)] text-[10px] font-mono rounded-lg border border-white/5 group-hover:text-[var(--text-primary)] group-hover:border-white/10 transition-all">
-                                {tag}
-                            </span>
-                        ))}
-                    </div>
+                    <h2 className="flex items-center text-4xl font-black text-[var(--text-primary)] uppercase tracking-[0.2em]">
+                        <span className="text-cyan-500 mr-4 font-mono text-2xl opacity-60">03.</span> <TextDecrypt text="Selected" /> <span className="ml-3 text-gradient"><TextDecrypt text="Works" delay={500} /></span>
+                    </h2>
+                    <div className="w-24 h-1.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"></div>
                 </motion.div>
-                        ))}
-            </div>
-        </motion.div>
-            </div >
-        </section >
 
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {projects.map((project, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: index * 0.1 }}
+                            className={`group relative glass-card p-8 rounded-[2rem] border-white/5 transition-all duration-500 flex flex-col h-full ${theme === 'dark' ? 'hover:border-cyan-500/20' : 'hover:border-cyan-500/30 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)]'}`}
+                        >
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 blur-3xl rounded-full -mr-16 -mt-16 group-hover:bg-cyan-500/10 transition-colors duration-700"></div>
+
+                            <div className="flex justify-between items-start mb-8 relative z-10">
+                                <div className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-500 ${theme === 'dark' ? 'bg-white/5 text-cyan-400 group-hover:bg-white/10' : 'bg-cyan-500/10 text-cyan-500 group-hover:scale-110'}`}>
+                                    <Folder size={24} />
+                                </div>
+                                <div className="flex gap-4 text-[var(--text-secondary)]">
+                                    <a href={project.github} className="hover:text-cyan-500 transition-colors" title="GitHub"><Github size={20} /></a>
+                                    <a href={project.live} className="hover:text-cyan-500 transition-colors" title="Live Demo"><ExternalLink size={20} /></a>
+                                </div>
+                            </div>
+
+                            <h3 className="text-xl font-bold text-[var(--text-primary)] mb-2 group-hover:text-cyan-500 transition-colors duration-300 relative z-10">
+                                {project.title}
+                            </h3>
+
+                            <div className="flex items-center gap-3 text-[10px] font-mono text-[var(--text-secondary)] mb-6 uppercase tracking-widest relative z-10">
+                                <span>{project.duration}</span>
+                                <div className="w-1 h-1 bg-[var(--card-border)] rounded-full"></div>
+                                <span>{project.team}</span>
+                            </div>
+
+                            <p className="text-[var(--text-secondary)] mb-8 text-sm leading-relaxed font-light line-clamp-4 relative z-10">
+                                {project.description}
+                            </p>
+
+                            <div className="flex flex-wrap gap-2 mt-auto relative z-10">
+                                {project.tags.map((tag) => (
+                                    <span key={tag} className="px-2.5 py-1 bg-white/5 text-[var(--text-secondary)] text-[10px] font-mono rounded-lg border border-white/5 group-hover:text-[var(--text-primary)] group-hover:border-white/10 transition-all">
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
+            </div>
+        </section>
     );
 }
