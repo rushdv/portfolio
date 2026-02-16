@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Send, MapPin, Mail, Phone, Terminal, CheckCircle, Copy } from "lucide-react";
 import { useState } from "react";
+import TextDecrypt from "../components/TextDecrypt";
 
 export default function Contact({ theme }) {
     const [formState, setFormState] = useState({
