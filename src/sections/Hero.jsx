@@ -19,18 +19,33 @@ export default function Hero({ theme }) {
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
-          <div className="space-y-6">
-            <h2 className="text-cyan-400 font-medium text-lg tracking-[0.2em] uppercase font-mono">
+
+          <div className="space-y-8">
+            <h2 className="text-cyan-400 font-medium text-lg tracking-[0.3em] uppercase font-mono">
               <TextDecrypt text="Hi, I'm" />
             </h2>
 
-            {/* Full Name - Clean & Aligned */}
-            <div className="space-y-1">
-              <h1 className="text-7xl md:text-9xl font-black text-[var(--text-primary)] tracking-tight leading-none">
-                <TextDecrypt text="Shihab Shahriar" delay={300} />
+            {/* Full Name - Premium Design with Gradients */}
+            <div className="space-y-3 relative">
+              {/* Glow effect behind name */}
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-purple-500/20 blur-3xl opacity-30"></div>
+
+              <h1 className="text-7xl md:text-8xl lg:text-[10rem] font-black tracking-tight leading-none relative z-10">
+                <span className="bg-gradient-to-r from-[var(--text-primary)] via-cyan-400 to-[var(--text-primary)] bg-clip-text text-transparent">
+                  <TextDecrypt text="Shihab" delay={300} />
+                </span>
               </h1>
-              <h1 className="text-7xl md:text-9xl font-black text-gradient tracking-tight leading-none">
-                <TextDecrypt text="Rashu" delay={800} />
+
+              <h1 className="text-7xl md:text-8xl lg:text-[10rem] font-black tracking-tight leading-none relative z-10">
+                <span className="bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+                  <TextDecrypt text="Shahriar" delay={600} />
+                </span>
+              </h1>
+
+              <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-wider leading-none font-mono relative z-10">
+                <span className="bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-500 bg-clip-text text-transparent">
+                  <TextDecrypt text="Rashu" delay={900} />
+                </span>
               </h1>
             </div>
 
@@ -39,11 +54,11 @@ export default function Hero({ theme }) {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2 }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/5 border border-cyan-500/20 text-cyan-400 text-xs font-mono font-medium"
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 text-cyan-400 text-sm font-mono font-medium backdrop-blur-sm"
             >
-              <span className="relative flex h-2 w-2">
+              <span className="relative flex h-2.5 w-2.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-500"></span>
               </span>
               Available for hire
             </motion.div>
