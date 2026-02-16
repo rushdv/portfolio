@@ -42,11 +42,11 @@ export default function Hero({ theme }) {
               </h1>
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-semibold text-[var(--text-primary)] max-w-2xl leading-tight opacity-90">
-              Architecting <span className="text-cyan-500">resilient digital infrastructure</span> at the intersection of engineering and cybersecurity.
+            <h3 className="text-2xl md:text-3xl font-semibold text-[var(--text-secondary)] max-w-2xl leading-tight">
+              Crafting <span className="text-[var(--text-primary)]">secure digital experiences</span> at the intersection of development and defense.
             </h3>
             <p className="text-[var(--text-secondary)] max-w-xl text-lg leading-relaxed font-light">
-              Full-Stack Systems Engineer specialized in high-performance web architectures and <span className="text-cyan-500/80 font-medium">security-hardened</span> technical ecosystems.
+              Computer Science student and Full-Stack Developer specialized in modern web architectures and <span className="text-cyan-500/80 font-medium">security-first</span> engineering.
             </p>
           </div>
 

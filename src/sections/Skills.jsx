@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const skills = {
-    "Kernel & Core": ["React/Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux/Zustand", "HTML5/CSS3"],
-    "Logic & Systems": ["Node.js", "Python/FastAPI", "Go", "PostgreSQL/Prisma", "Redis", "WebSockets/gRPC"],
-    "Defense & Intelligence": ["Network Security", "Penetration Testing", "OAuth2/JWT", "Cryptography", "Kali/Metasploit", "Zero Trust"],
-    "Architecture & Flow": ["Docker/K8s", "AWS/Cloud", "Git/CI-CD", "System Design", "Microservices", "Vercel"]
+    Frontend: ["HTML5/CSS3", "React/Next.js", "Tailwind CSS", "Framer Motion", "TypeScript", "JavaScript"],
+    Backend: ["Node.js", "Python/FastAPI", "Express", "PostgreSQL", "Prisma", "WebSockets"],
+    Security: ["Penetration Testing", "Network Security", "Metasploit", "Kali Linux", "Wireshark", "Burp Suite"],
+    Tools: ["Git/GitHub", "Docker", "AWS", "Vercel", "Figma", "VS Code"]
 };
 
 export default function Skills({ theme }) {

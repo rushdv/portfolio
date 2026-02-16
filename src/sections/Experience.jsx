@@ -3,28 +3,28 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
     {
-        title: "Systems Engineer",
+        title: "Web Developer",
         company: "DevEleven-io",
-        location: "Infrastructure & Web",
+        location: "Remote / GitHub Organization",
         period: "2024 - Present",
-        description: "Engineering scalable full-stack architectures with a core focus on security-first implementation and system resilience. Developing high-concurrency microservices and optimizing architectural integrity within organizational workflows.",
-        skills: ["React", "Infrastructure", "API Design", "Security"]
+        description: "Specialized in full-stack implementation and security-centric architectures. Collaboratively delivering high-performance web applications and participating in open-source development within the organization.",
+        skills: ["React", "Vite", "Tailwind CSS", "API Development"]
     },
     {
-        title: "Computer Science Researcher",
-        company: "University of Science",
+        title: "Computer Science Student",
+        company: "University",
         location: "Bangladesh",
         period: "2025 - Present",
-        description: "Mastering core theoretical foundations with focused research into Network Security frameworks and optimized Data Structures. Implementing low-level technical intelligence for offensive and defensive security modules.",
-        skills: ["Algorithms", "Python", "Network Architecture", "Security Auditing"]
+        description: "Mastering core principles of Computer Science, with a heavy focus on Algorithms, Data Structures, and Network Security. Actively building a diverse portfolio of security tools and web platforms.",
+        skills: ["Algorithms", "Python", "Network Security", "Databases"]
     },
     {
-        title: "Technical Architect (Open Source)",
-        company: "GitHub Community",
-        location: "Global Distributed",
+        title: "Open Source Contributor",
+        company: "Various Projects",
+        location: "GitHub",
         period: "2022 - Present",
-        description: "Contributing to low-level system utilities and security tools. Focused on hardening infrastructure and auditing core codebase integrity for high-impact open-source environments.",
-        skills: ["System Design", "Audit", "CI/CD", "Secure Coding"]
+        description: "Actively contributing to various open-source projects, improving code quality, and implementing new features. Focused on building tools that simplify debugging and enhance security.",
+        skills: ["Git", "System Design", "JavaScript", "Security Auditing"]
     }
 ];
 
