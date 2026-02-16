@@ -1,4 +1,3 @@
-```javascript
 import { motion } from "framer-motion";
 import { Github, Linkedin, Twitter, ArrowRight, Download } from "lucide-react";
 import TextDecrypt from "../components/TextDecrypt";
@@ -7,8 +6,8 @@ export default function Hero({ theme }) {
   return (
     <section id="home" className="min-h-screen flex items-center pt-16 relative overflow-hidden transition-colors duration-500">
       {/* Background Glows */}
-      <div className={`absolute top - 1 / 4 - left - 20 w - [500px] h - [500px] bg - cyan - 500 / 10 blur - [120px] rounded - full ${ theme === 'light' ? 'mix-blend-multiply opacity-50' : '' } `}></div>
-      <div className={`absolute bottom - 1 / 4 - right - 20 w - [500px] h - [500px] bg - blue - 600 / 10 blur - [120px] rounded - full ${ theme === 'light' ? 'mix-blend-multiply opacity-50' : '' } `}></div>
+      <div className={`absolute top-1/4 -left-20 w-[500px] h-[500px] bg-cyan-500/10 blur-[120px] rounded-full ${theme === 'light' ? 'mix-blend-multiply opacity-50' : ''}`}></div>
+      <div className={`absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full ${theme === 'light' ? 'mix-blend-multiply opacity-50' : ''}`}></div>
       {theme === 'light' && <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-purple-500/5 blur-[140px] rounded-full"></div>}
 
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center w-full relative z-10">
@@ -84,9 +83,9 @@ export default function Hero({ theme }) {
           className="hidden md:block relative group"
         >
           {/* Card Glow */}
-          <div className={`absolute - inset - 2 rounded - [2rem] bg - gradient - to - br from - cyan - 500 / 20 to - blue - 600 / 20 blur - 2xl transition - opacity duration - 700 ${ theme === 'dark' ? 'opacity-0 group-hover:opacity-100' : 'opacity-20 group-hover:opacity-40' } `}></div>
+          <div className={`absolute - inset - 2 rounded - [2rem] bg - gradient - to - br from - cyan - 500 / 20 to - blue - 600 / 20 blur - 2xl transition - opacity duration - 700 ${theme === 'dark' ? 'opacity-0 group-hover:opacity-100' : 'opacity-20 group-hover:opacity-40'} `}></div>
 
-          <div className={`glass - card relative rounded - [2rem] p - 10 overflow - hidden transition - all duration - 500 ${ theme === 'dark' ? 'border-white/5 shadow-2xl group-hover:border-cyan-500/20' : 'shadow-2xl group-hover:border-cyan-500/30 group-hover:-translate-y-2' } `}>
+          <div className={`glass - card relative rounded - [2rem] p - 10 overflow - hidden transition - all duration - 500 ${theme === 'dark' ? 'border-white/5 shadow-2xl group-hover:border-cyan-500/20' : 'shadow-2xl group-hover:border-cyan-500/30 group-hover:-translate-y-2'} `}>
             <div className="flex gap-1.5 mb-8">
               <div className="w-3 h-3 rounded-full bg-red-400/20 border border-red-400/40"></div>
               <div className="w-3 h-3 rounded-full bg-yellow-400/20 border border-yellow-400/40"></div>
@@ -99,22 +98,22 @@ export default function Hero({ theme }) {
                 # Technical Manifesto
               </div>
 
-              <div className={`space - y - 1.5 rounded - xl p - 5 border backdrop - blur - sm shadow - 2xl transition - all duration - 500 ${ theme === 'dark' ? 'bg-slate-950/20 border-white/5' : 'bg-slate-900 border-slate-800' } `}>
-                <p className={`${ theme === 'dark' ? 'text-blue-400' : 'text-blue-300' } `}>class <span className={`${ theme === 'dark' ? 'text-yellow-400' : 'text-yellow-500' } font - bold`}>ShihabShahriar</span>:</p>
+              <div className={`space - y - 1.5 rounded - xl p - 5 border backdrop - blur - sm shadow - 2xl transition - all duration - 500 ${theme === 'dark' ? 'bg-slate-950/20 border-white/5' : 'bg-slate-900 border-slate-800'} `}>
+                <p className={`${theme === 'dark' ? 'text-blue-400' : 'text-blue-300'} `}>class <span className={`${theme === 'dark' ? 'text-yellow-400' : 'text-yellow-500'} font - bold`}>ShihabShahriar</span>:</p>
                 <div className="pl-6 space-y-1">
-                  <p className={`${ theme === 'dark' ? 'text-blue-400' : 'text-blue-300' } `}>def <span className={`${ theme === 'dark' ? 'text-yellow-200' : 'text-yellow-400' } `}>__init__</span>(<span className="text-orange-400">self</span>):</p>
+                  <p className={`${theme === 'dark' ? 'text-blue-400' : 'text-blue-300'} `}>def <span className={`${theme === 'dark' ? 'text-yellow-200' : 'text-yellow-400'} `}>__init__</span>(<span className="text-orange-400">self</span>):</p>
                   <div className="pl-6 text-[12px] space-y-1">
-                    <p className={`${ theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100' } `}><span className="text-orange-400">self</span>.<span className="text-cyan-400">role</span> = <span className="text-emerald-400">"Full Stack Developer"</span></p>
-                    <p className={`${ theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100' } `}><span className="text-orange-400">self</span>.<span className="text-cyan-400">alias</span> = <span className="text-emerald-400">"Security Enthusiast"</span></p>
-                    <p className={`${ theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100' } `}><span className="text-orange-400">self</span>.<span className="text-cyan-400">status</span> = <span className="text-emerald-400">"CS Student"</span></p>
-                    <p className={`${ theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100' } `}><span className="text-orange-400">self</span>.<span className="text-cyan-400">mindset</span> = <span className="text-emerald-400">"Tech Enthusiast"</span></p>
+                    <p className={`${theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100'} `}><span className="text-orange-400">self</span>.<span className="text-cyan-400">role</span> = <span className="text-emerald-400">"Full Stack Developer"</span></p>
+                    <p className={`${theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100'} `}><span className="text-orange-400">self</span>.<span className="text-cyan-400">alias</span> = <span className="text-emerald-400">"Security Enthusiast"</span></p>
+                    <p className={`${theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100'} `}><span className="text-orange-400">self</span>.<span className="text-cyan-400">status</span> = <span className="text-emerald-400">"CS Student"</span></p>
+                    <p className={`${theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100'} `}><span className="text-orange-400">self</span>.<span className="text-cyan-400">mindset</span> = <span className="text-emerald-400">"Tech Enthusiast"</span></p>
                   </div>
                 </div>
 
                 <div className="pl-6 pt-3">
-                  <p className={`${ theme === 'dark' ? 'text-blue-400' : 'text-blue-300' } `}>def <span className={`${ theme === 'dark' ? 'text-yellow-200' : 'text-yellow-400' } `}>get_expertise</span>(<span className="text-orange-400">self</span>):</p>
+                  <p className={`${theme === 'dark' ? 'text-blue-400' : 'text-blue-300'} `}>def <span className={`${theme === 'dark' ? 'text-yellow-200' : 'text-yellow-400'} `}>get_expertise</span>(<span className="text-orange-400">self</span>):</p>
                   <div className="pl-6 text-[12px]">
-                    <p className={`${ theme === 'dark' ? 'text-purple-400' : 'text-purple-300' } `}>return <span className="text-cyan-400">[</span></p>
+                    <p className={`${theme === 'dark' ? 'text-purple-400' : 'text-purple-300'} `}>return <span className="text-cyan-400">[</span></p>
                     <div className="pl-6 flex flex-col text-emerald-400/90 italic">
                       <span>"Secure_Web_Architecture",</span>
                       <span>"Penetration_Testing",</span>

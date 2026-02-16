@@ -40,7 +40,7 @@ export default function Contact({ theme }) {
                     className="flex flex-col items-center text-center mb-20 space-y-4"
                 >
                     <h2 className="flex items-center text-4xl font-black text-[var(--text-primary)] uppercase tracking-[0.2em]">
-                        <span className="text-cyan-500 mr-4 font-mono text-2xl opacity-60">05.</span> Get In <span className="ml-3 text-gradient">Touch</span>
+                        <span className="text-cyan-500 mr-4 font-mono text-2xl opacity-60">05.</span> <TextDecrypt text="Get" /> <TextDecrypt text="In" delay={300} /> <span className="ml-3 text-gradient"><TextDecrypt text="Touch" delay={600} /></span>
                     </h2>
                     <div className="w-24 h-1.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"></div>
                     <p className="text-[var(--text-secondary)] max-w-2xl font-light text-lg">
