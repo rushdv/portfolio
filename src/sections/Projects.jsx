@@ -116,7 +116,7 @@ export default function Projects({ theme }) {
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/5 blur-3xl rounded-full -mr-16 -mt-16 group-hover:bg-cyan-500/10 transition-colors duration-700"></div>
 
                                 <div className="flex justify-between items-start mb-8 relative z-10">
-                                    <div className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-500 ${theme === 'dark' ? 'bg-white/5 text-cyan-400' : 'bg-gradient-to-br from-cyan-500 to-blue-600 text-slate-950 shadow-lg group-hover:rotate-12 group-hover:scale-110'}`}>
+                                    <div className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-500 ${theme === 'dark' ? 'bg-white/5 text-cyan-400 group-hover:bg-white/10' : 'bg-cyan-500/10 text-cyan-500 group-hover:scale-110'}`}>
                                         <Folder size={24} strokeWidth={theme === 'dark' ? 1.5 : 2} />
                                     </div>
                                     <div className="flex gap-4 text-[var(--text-secondary)]">
