@@ -128,8 +128,8 @@ export default function Contact({ theme }) {
                                         name="name"
                                         value={formState.name}
                                         onChange={handleChange}
-                                        placeholder="Identification"
-                                        className="w-full bg-[var(--text-primary)]/5 border border-white/5 rounded-2xl px-6 py-4 text-[var(--text-primary)] placeholder-slate-700 focus:outline-none focus:border-cyan-500/50 focus:bg-[var(--text-primary)]/10 transition-all duration-300 font-light"
+                                        placeholder="Enter your full name"
+                                        className="w-full bg-slate-900/50 border border-white/5 rounded-2xl px-6 py-4 text-[var(--text-primary)] placeholder-slate-600 focus:outline-none focus:border-cyan-500/50 focus:bg-slate-900/80 transition-all duration-300 font-light"
                                     />
                                 </div>
 
@@ -141,8 +141,8 @@ export default function Contact({ theme }) {
                                         name="email"
                                         value={formState.email}
                                         onChange={handleChange}
-                                        placeholder="Endpoint"
-                                        className="w-full bg-[var(--text-primary)]/5 border border-white/5 rounded-2xl px-6 py-4 text-[var(--text-primary)] placeholder-slate-700 focus:outline-none focus:border-cyan-500/50 focus:bg-[var(--text-primary)]/10 transition-all duration-300 font-light"
+                                        placeholder="Enter your email address"
+                                        className="w-full bg-slate-900/50 border border-white/5 rounded-2xl px-6 py-4 text-[var(--text-primary)] placeholder-slate-600 focus:outline-none focus:border-cyan-500/50 focus:bg-slate-900/80 transition-all duration-300 font-light"
                                     />
                                 </div>
                             </div>
@@ -155,8 +155,8 @@ export default function Contact({ theme }) {
                                     value={formState.message}
                                     onChange={handleChange}
                                     rows={5}
-                                    placeholder="Payload description..."
-                                    className="w-full bg-[var(--text-primary)]/5 border border-white/5 rounded-2xl px-6 py-4 text-[var(--text-primary)] placeholder-slate-700 focus:outline-none focus:border-cyan-500/50 focus:bg-[var(--text-primary)]/10 transition-all duration-300 resize-none font-light"
+                                    placeholder="Enter your message payload..."
+                                    className="w-full bg-slate-900/50 border border-white/5 rounded-2xl px-6 py-4 text-[var(--text-primary)] placeholder-slate-600 focus:outline-none focus:border-cyan-500/50 focus:bg-slate-900/80 transition-all duration-300 resize-none font-light"
                                 ></textarea>
                             </div>
 

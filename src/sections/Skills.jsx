@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const skills = {
-    "Kernel & Core": ["HTML", "CSS", "Tailwind CSS", "React", "Framer Motion", "JavaScript (ES6+)"],
-    "Logic & Systems": ["Node.js", "Express", "PostgreSQL", "MongoDB", "Prisma", "GraphQL"],
-    "Defense & Intelligence": ["Burp Suite", "Wireshark", "Nmap", "Metasploit", "Kali Linux", "OWASP ZAP"],
-    "Architecture & Flow": ["Git", "Docker", "AWS", "Figma", "VS Code", "Vercel"]
+    "Kernel & Core": ["React/Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux/Zustand", "HTML5/CSS3"],
+    "Logic & Systems": ["Node.js", "Python/FastAPI", "Go", "PostgreSQL/Prisma", "Redis", "WebSockets/gRPC"],
+    "Defense & Intelligence": ["Network Security", "Penetration Testing", "OAuth2/JWT", "Cryptography", "Kali/Metasploit", "Zero Trust"],
+    "Architecture & Flow": ["Docker/K8s", "AWS/Cloud", "Git/CI-CD", "System Design", "Microservices", "Vercel"]
 };
 
 export default function Skills({ theme }) {
@@ -43,13 +43,30 @@ export default function Skills({ theme }) {
                                         <div className={`${theme === 'dark' ? 'w-2 h-2 bg-cyan-500 group-hover:scale-150 rounded-full' : 'w-2.5 h-2.5 bg-cyan-500 group-hover:scale-125 rounded-full'} transition-all`}></div>
                                     </div>
                                 </div>
+
+                                {/* Metric Bar */}
+                                <div className="mb-6 space-y-2">
+                                    <div className="flex justify-between text-[10px] font-mono text-slate-500 uppercase tracking-widest">
+                                        <span>System Proficiency</span>
+                                        <span className="text-cyan-500">{90 - (index * 5)}%</span>
+                                    </div>
+                                    <div className="h-1 w-full bg-white/5 rounded-full overflow-hidden">
+                                        <motion.div
+                                            initial={{ width: 0 }}
+                                            whileInView={{ width: `${90 - (index * 5)}%` }}
+                                            transition={{ duration: 1, delay: 0.5 }}
+                                            className="h-full bg-gradient-to-r from-cyan-500 to-blue-500"
+                                        />
+                                    </div>
+                                </div>
+
                                 <div className="flex flex-wrap gap-2 mt-auto">
                                     {items.map((skill) => (
                                         <span
                                             key={skill}
                                             className={`px-3 py-1.5 transition-all cursor-default font-mono font-medium ${theme === 'dark'
                                                 ? 'bg-white/5 text-[var(--text-secondary)] rounded-full text-[11px] border border-white/5 hover:bg-cyan-500/10 hover:text-cyan-400 hover:border-cyan-500/30'
-                                                : 'px-4 py-2 bg-[var(--text-primary)]/5 border border-[var(--card-border)] text-[var(--text-secondary)] rounded-xl text-xs hover:text-cyan-500 hover:border-cyan-500/50 hover:bg-cyan-500/5'}`}
+                                                : 'px-4 py-2 bg-slate-900 border border-slate-800 text-slate-300 rounded-xl text-xs hover:text-cyan-500 hover:border-cyan-500/50 hover:bg-slate-800'}`}
                                         >
                                             {skill}
                                         </span>
