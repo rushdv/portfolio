@@ -29,14 +29,14 @@ export default function Hero({ theme }) {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
               </span>
-              Available for new projects
+              Available for hire
             </motion.div>
 
             <div className="space-y-3">
               <h2 className="text-cyan-400 font-medium text-lg tracking-[0.2em] uppercase font-mono">
                 Hi, I'm
               </h2>
-              <h1 className="text-6xl md:text-8xl font-black text-[var(--text-primary)] tracking-tight leading-[0.9]">
+              <h1 className="text-7xl md:text-9xl font-black text-[var(--text-primary)] tracking-tight leading-[0.8] mb-2">
                 Shihab <br />
                 <span className="text-gradient">Shahriar</span>
               </h1>
@@ -91,32 +91,36 @@ export default function Hero({ theme }) {
               <div className="w-3 h-3 rounded-full bg-green-400/20 border border-green-400/40"></div>
             </div>
 
-            <div className="font-mono text-[13px] leading-relaxed space-y-4">
-              <div className="text-[var(--text-secondary)] italic mb-4">// Technical Manifesto</div>
+            <div className="font-mono text-[13px] leading-relaxed space-y-4 relative z-10">
+              <div className="flex items-center gap-2 text-slate-500 italic mb-4">
+                <span className="w-8 h-px bg-slate-800"></span>
+                # Technical Manifesto
+              </div>
 
-              <div className="space-y-1">
-                <p className="text-blue-500">class <span className="text-cyan-500 font-bold">Developer</span> {"{"}</p>
+              <div className="space-y-1.5 rounded-xl bg-slate-950/20 p-5 border border-white/5 backdrop-blur-sm shadow-2xl">
+                <p className="text-blue-400">class <span className="text-yellow-400 font-bold">ShihabShahriar</span>:</p>
                 <div className="pl-6 space-y-1">
-                  <p className="text-[var(--text-secondary)] font-light">constructor() {"{"}</p>
-                  <div className="pl-6">
-                    <p className="text-[var(--text-primary)]">this.<span className="text-pink-500">name</span> = <span className="text-emerald-500">'Shihab'</span>;</p>
-                    <p className="text-[var(--text-primary)]">this.<span className="text-pink-500">role</span> = <span className="text-emerald-400">'Full Stack'</span>;</p>
-                    <p className="text-[var(--text-primary)]">this.<span className="text-pink-500">focus</span> = <span className="text-emerald-400">'Modern UI'</span>;</p>
+                  <p className="text-blue-400">def <span className="text-yellow-200">__init__</span>(<span className="text-orange-400">self</span>):</p>
+                  <div className="pl-6 text-[12px] space-y-1">
+                    <p className="text-[var(--text-primary)]"><span className="text-orange-400">self</span>.<span className="text-cyan-400">role</span> = <span className="text-emerald-400">"Full Stack Developer"</span></p>
+                    <p className="text-[var(--text-primary)]"><span className="text-orange-400">self</span>.<span className="text-cyan-400">alias</span> = <span className="text-emerald-400">"Security Enthusiast"</span></p>
+                    <p className="text-[var(--text-primary)]"><span className="text-orange-400">self</span>.<span className="text-cyan-400">status</span> = <span className="text-emerald-400">"CS Student"</span></p>
+                    <p className="text-[var(--text-primary)]"><span className="text-orange-400">self</span>.<span className="text-cyan-400">mindset</span> = <span className="text-emerald-400">"Tech Enthusiast"</span></p>
                   </div>
-                  <p className="text-[var(--text-secondary)] font-light">{"}"}</p>
                 </div>
 
-                <div className="pl-6 pt-2">
-                  <p className="text-slate-400 font-light">get skills() {"{"}</p>
-                  <div className="pl-6 flex flex-wrap gap-x-3 text-emerald-400/90">
-                    <span>['React',</span>
-                    <span>'FastAPI',</span>
-                    <span>'Python',</span>
-                    <span>'Next.js']</span>
+                <div className="pl-6 pt-3">
+                  <p className="text-blue-400">def <span className="text-yellow-200">get_expertise</span>(<span className="text-orange-400">self</span>):</p>
+                  <div className="pl-6 text-[12px]">
+                    <p className="text-purple-400">return <span className="text-cyan-400">[</span></p>
+                    <div className="pl-6 flex flex-col text-emerald-400/90 italic">
+                      <span>"Secure_Web_Architecture",</span>
+                      <span>"Penetration_Testing",</span>
+                      <span>"Modern_UI_Aesthetics"</span>
+                    </div>
+                    <p className="text-cyan-400">]</p>
                   </div>
-                  <p className="text-slate-400 font-light">{"}"}</p>
                 </div>
-                <p className="text-blue-400">{"}"}</p>
               </div>
             </div>
 
