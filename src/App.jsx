@@ -7,7 +7,6 @@ import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 import GitHubStats from "./sections/GitHubStats";
 import Certifications from "./sections/Certifications";
-import Testimonials from "./sections/Testimonials";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 import SocialDock from "./components/SocialDock";
@@ -44,7 +43,6 @@ function App() {
         <Experience theme={theme} />
         <GitHubStats theme={theme} />
         <Certifications theme={theme} />
-        <Testimonials theme={theme} />
         <Contact theme={theme} />
       </main>
       <SocialDock theme={theme} />
