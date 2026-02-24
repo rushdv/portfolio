@@ -5,9 +5,13 @@ import About from "./sections/About";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
+import GitHubStats from "./sections/GitHubStats";
+import Certifications from "./sections/Certifications";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 import SocialDock from "./components/SocialDock";
+import CommandConsole from "./components/CommandConsole";
+import SystemTicker from "./components/SystemTicker";
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -29,18 +33,22 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen transition-colors duration-500 overflow-x-hidden">
+    <div className="min-h-screen transition-colors duration-500 overflow-x-hidden pb-8">
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main>
         <Hero theme={theme} />
         <About theme={theme} />
-        <Experience theme={theme} />
-        <Projects theme={theme} />
         <Skills theme={theme} />
+        <Projects theme={theme} />
+        <Experience theme={theme} />
+        <GitHubStats theme={theme} />
+        <Certifications theme={theme} />
         <Contact theme={theme} />
       </main>
       <SocialDock theme={theme} />
       <Footer theme={theme} />
+      <CommandConsole />
+      <SystemTicker />
     </div>
   );
 }

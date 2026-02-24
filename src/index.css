@@ -27,10 +27,23 @@
 }
 
 body {
-    @apply antialiased transition-colors duration-500;
+    @apply antialiased transition-colors duration-500 min-h-screen;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     font-family: 'Inter', sans-serif;
+    position: relative;
+}
+
+[data-theme='dark'] body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 0;
 }
 
 [data-theme='light'] body {

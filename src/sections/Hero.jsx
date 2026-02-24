@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Twitter, ArrowRight, Download } from "lucide-react";
+import TextDecrypt from "../components/TextDecrypt";
 
 export default function Hero({ theme }) {
   return (
@@ -18,37 +19,57 @@ export default function Hero({ theme }) {
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
-          <div className="space-y-6">
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/5 border border-cyan-500/20 text-cyan-400 text-xs font-mono font-medium"
-            >
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
-              </span>
-              Available for hire
-            </motion.div>
 
-            <div className="space-y-3">
-              <h2 className="text-cyan-400 font-medium text-lg tracking-[0.2em] uppercase font-mono">
-                Hi, I'm
-              </h2>
-              <h1 className="text-7xl md:text-9xl font-black text-[var(--text-primary)] tracking-tight leading-[0.8] mb-2">
-                Shihab <br />
-                <span className="text-gradient">Shahriar</span>
+          <div className="space-y-8">
+            <h2 className="text-cyan-400 font-medium text-lg tracking-[0.3em] uppercase font-mono">
+              <TextDecrypt text="Hi, I'm" />
+            </h2>
+
+            {/* Full Name - Premium Design with Gradients */}
+            <div className="space-y-2 relative">
+              {/* Glow effect behind name */}
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-purple-500/20 blur-3xl opacity-30"></div>
+
+              <h1 className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none relative z-10">
+                <span className="bg-gradient-to-r from-[var(--text-primary)] via-cyan-400 to-[var(--text-primary)] bg-clip-text text-transparent">
+                  <TextDecrypt text="Shihab" delay={300} />
+                </span>
+              </h1>
+
+              <h1 className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none relative z-10">
+                <span className="bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">
+                  <TextDecrypt text="Shahriar" delay={600} />
+                </span>
+              </h1>
+
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-wider leading-none font-mono relative z-10">
+                <span className="bg-gradient-to-r from-cyan-400 via-cyan-500 to-blue-500 bg-clip-text text-transparent">
+                  <TextDecrypt text="Rashu" delay={900} />
+                </span>
               </h1>
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-semibold text-[var(--text-secondary)] max-w-2xl leading-tight">
-              Crafting <span className="text-[var(--text-primary)]">secure digital experiences</span> at the intersection of development and defense.
-            </h3>
-            <p className="text-[var(--text-secondary)] max-w-xl text-lg leading-relaxed font-light">
-              Computer Science student and Full-Stack Developer specialized in modern web architectures and <span className="text-cyan-500/80 font-medium">security-first</span> engineering.
-            </p>
+            {/* Available for hire badge - Better positioned */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.2 }}
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 text-cyan-400 text-sm font-mono font-medium backdrop-blur-sm"
+            >
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-500"></span>
+              </span>
+              Available for hire
+            </motion.div>
           </div>
+
+          <h3 className="text-2xl md:text-3xl font-semibold text-[var(--text-secondary)] max-w-2xl leading-tight">
+            Crafting <span className="text-[var(--text-primary)]">secure digital experiences</span> at the intersection of development and defense.
+          </h3>
+          <p className="text-[var(--text-secondary)] max-w-xl text-lg leading-relaxed font-light">
+            Computer Science student and Full-Stack Developer specialized in modern web architectures and <span className="text-cyan-500/80 font-medium">security-first</span> engineering.
+          </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
             <a
@@ -82,9 +103,9 @@ export default function Hero({ theme }) {
           className="hidden md:block relative group"
         >
           {/* Card Glow */}
-          <div className={`absolute -inset-2 rounded-[2rem] bg-gradient-to-br from-cyan-500/20 to-blue-600/20 blur-2xl transition-opacity duration-700 ${theme === 'dark' ? 'opacity-0 group-hover:opacity-100' : 'opacity-20 group-hover:opacity-40'}`}></div>
+          <div className={`absolute - inset - 2 rounded - [2rem] bg - gradient - to - br from - cyan - 500 / 20 to - blue - 600 / 20 blur - 2xl transition - opacity duration - 700 ${theme === 'dark' ? 'opacity-0 group-hover:opacity-100' : 'opacity-20 group-hover:opacity-40'} `}></div>
 
-          <div className={`glass-card relative rounded-[2rem] p-10 overflow-hidden transition-all duration-500 ${theme === 'dark' ? 'border-white/5 shadow-2xl group-hover:border-cyan-500/20' : 'shadow-2xl group-hover:border-cyan-500/30 group-hover:-translate-y-2'}`}>
+          <div className={`glass - card relative rounded - [2rem] p - 10 overflow - hidden transition - all duration - 500 ${theme === 'dark' ? 'border-white/5 shadow-2xl group-hover:border-cyan-500/20' : 'shadow-2xl group-hover:border-cyan-500/30 group-hover:-translate-y-2'} `}>
             <div className="flex gap-1.5 mb-8">
               <div className="w-3 h-3 rounded-full bg-red-400/20 border border-red-400/40"></div>
               <div className="w-3 h-3 rounded-full bg-yellow-400/20 border border-yellow-400/40"></div>
@@ -97,22 +118,22 @@ export default function Hero({ theme }) {
                 # Technical Manifesto
               </div>
 
-              <div className={`space-y-1.5 rounded-xl p-5 border backdrop-blur-sm shadow-2xl transition-all duration-500 ${theme === 'dark' ? 'bg-slate-950/20 border-white/5' : 'bg-slate-900 border-slate-800'}`}>
-                <p className={`${theme === 'dark' ? 'text-blue-400' : 'text-blue-300'}`}>class <span className={`${theme === 'dark' ? 'text-yellow-400' : 'text-yellow-500'} font-bold`}>ShihabShahriar</span>:</p>
+              <div className={`space - y - 1.5 rounded - xl p - 5 border backdrop - blur - sm shadow - 2xl transition - all duration - 500 ${theme === 'dark' ? 'bg-slate-950/20 border-white/5' : 'bg-slate-900 border-slate-800'} `}>
+                <p className={`${theme === 'dark' ? 'text-blue-400' : 'text-blue-300'} `}>class <span className={`${theme === 'dark' ? 'text-yellow-400' : 'text-yellow-500'} font - bold`}>ShihabShahriar</span>:</p>
                 <div className="pl-6 space-y-1">
-                  <p className={`${theme === 'dark' ? 'text-blue-400' : 'text-blue-300'}`}>def <span className={`${theme === 'dark' ? 'text-yellow-200' : 'text-yellow-400'}`}>__init__</span>(<span className="text-orange-400">self</span>):</p>
+                  <p className={`${theme === 'dark' ? 'text-blue-400' : 'text-blue-300'} `}>def <span className={`${theme === 'dark' ? 'text-yellow-200' : 'text-yellow-400'} `}>__init__</span>(<span className="text-orange-400">self</span>):</p>
                   <div className="pl-6 text-[12px] space-y-1">
-                    <p className={`${theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100'}`}><span className="text-orange-400">self</span>.<span className="text-cyan-400">role</span> = <span className="text-emerald-400">"Full Stack Developer"</span></p>
-                    <p className={`${theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100'}`}><span className="text-orange-400">self</span>.<span className="text-cyan-400">alias</span> = <span className="text-emerald-400">"Security Enthusiast"</span></p>
-                    <p className={`${theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100'}`}><span className="text-orange-400">self</span>.<span className="text-cyan-400">status</span> = <span className="text-emerald-400">"CS Student"</span></p>
-                    <p className={`${theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100'}`}><span className="text-orange-400">self</span>.<span className="text-cyan-400">mindset</span> = <span className="text-emerald-400">"Tech Enthusiast"</span></p>
+                    <p className={`${theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100'} `}><span className="text-orange-400">self</span>.<span className="text-cyan-400">role</span> = <span className="text-emerald-400">"Full Stack Developer"</span></p>
+                    <p className={`${theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100'} `}><span className="text-orange-400">self</span>.<span className="text-cyan-400">alias</span> = <span className="text-emerald-400">"Security Enthusiast"</span></p>
+                    <p className={`${theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100'} `}><span className="text-orange-400">self</span>.<span className="text-cyan-400">status</span> = <span className="text-emerald-400">"CS Student"</span></p>
+                    <p className={`${theme === 'dark' ? 'text-[var(--text-primary)]' : 'text-slate-100'} `}><span className="text-orange-400">self</span>.<span className="text-cyan-400">mindset</span> = <span className="text-emerald-400">"Tech Enthusiast"</span></p>
                   </div>
                 </div>
 
                 <div className="pl-6 pt-3">
-                  <p className={`${theme === 'dark' ? 'text-blue-400' : 'text-blue-300'}`}>def <span className={`${theme === 'dark' ? 'text-yellow-200' : 'text-yellow-400'}`}>get_expertise</span>(<span className="text-orange-400">self</span>):</p>
+                  <p className={`${theme === 'dark' ? 'text-blue-400' : 'text-blue-300'} `}>def <span className={`${theme === 'dark' ? 'text-yellow-200' : 'text-yellow-400'} `}>get_expertise</span>(<span className="text-orange-400">self</span>):</p>
                   <div className="pl-6 text-[12px]">
-                    <p className={`${theme === 'dark' ? 'text-purple-400' : 'text-purple-300'}`}>return <span className="text-cyan-400">[</span></p>
+                    <p className={`${theme === 'dark' ? 'text-purple-400' : 'text-purple-300'} `}>return <span className="text-cyan-400">[</span></p>
                     <div className="pl-6 flex flex-col text-emerald-400/90 italic">
                       <span>"Secure_Web_Architecture",</span>
                       <span>"Penetration_Testing",</span>

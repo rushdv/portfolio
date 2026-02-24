@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import TextDecrypt from "../components/TextDecrypt";
 
 export default function About({ theme }) {
     return (
@@ -15,7 +16,7 @@ export default function About({ theme }) {
                     <div className="space-y-8">
                         <div className="space-y-4">
                             <h2 className="flex items-center text-3xl font-black text-[var(--text-primary)] uppercase tracking-wider">
-                                <span className="text-cyan-500 mr-3 font-mono text-xl opacity-60">01.</span> About <span className="ml-2 text-gradient">Me</span>
+                                <span className="text-cyan-500 mr-3 font-mono text-xl opacity-60">01.</span> <TextDecrypt text="About" /> <span className="ml-2 text-gradient"><TextDecrypt text="Me" delay={500} /></span>
                             </h2>
                             <div className="w-16 h-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"></div>
                         </div>

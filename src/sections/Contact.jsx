@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Send, MapPin, Mail, Phone, Terminal, CheckCircle, Copy } from "lucide-react";
 import { useState } from "react";
+import TextDecrypt from "../components/TextDecrypt";
 
 export default function Contact({ theme }) {
     const [formState, setFormState] = useState({
@@ -40,7 +41,7 @@ export default function Contact({ theme }) {
                     className="flex flex-col items-center text-center mb-20 space-y-4"
                 >
                     <h2 className="flex items-center text-4xl font-black text-[var(--text-primary)] uppercase tracking-[0.2em]">
-                        <span className="text-cyan-500 mr-4 font-mono text-2xl opacity-60">05.</span> Get In <span className="ml-3 text-gradient">Touch</span>
+                        <span className="text-cyan-500 mr-4 font-mono text-2xl opacity-60">05.</span> <TextDecrypt text="Get" /> <TextDecrypt text="In" delay={300} /> <span className="ml-3 text-gradient"><TextDecrypt text="Touch" delay={600} /></span>
                     </h2>
                     <div className="w-24 h-1.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"></div>
                     <p className="text-[var(--text-secondary)] max-w-2xl font-light text-lg">
@@ -128,8 +129,8 @@ export default function Contact({ theme }) {
                                         name="name"
                                         value={formState.name}
                                         onChange={handleChange}
-                                        placeholder="Identification"
-                                        className="w-full bg-[var(--text-primary)]/5 border border-white/5 rounded-2xl px-6 py-4 text-[var(--text-primary)] placeholder-slate-700 focus:outline-none focus:border-cyan-500/50 focus:bg-[var(--text-primary)]/10 transition-all duration-300 font-light"
+                                        placeholder="Enter your full name"
+                                        className="w-full bg-slate-900/50 border border-white/5 rounded-2xl px-6 py-4 text-[var(--text-primary)] placeholder-slate-600 focus:outline-none focus:border-cyan-500/50 focus:bg-slate-900/80 transition-all duration-300 font-light"
                                     />
                                 </div>
 
@@ -141,8 +142,8 @@ export default function Contact({ theme }) {
                                         name="email"
                                         value={formState.email}
                                         onChange={handleChange}
-                                        placeholder="Endpoint"
-                                        className="w-full bg-[var(--text-primary)]/5 border border-white/5 rounded-2xl px-6 py-4 text-[var(--text-primary)] placeholder-slate-700 focus:outline-none focus:border-cyan-500/50 focus:bg-[var(--text-primary)]/10 transition-all duration-300 font-light"
+                                        placeholder="Enter your email address"
+                                        className="w-full bg-slate-900/50 border border-white/5 rounded-2xl px-6 py-4 text-[var(--text-primary)] placeholder-slate-600 focus:outline-none focus:border-cyan-500/50 focus:bg-slate-900/80 transition-all duration-300 font-light"
                                     />
                                 </div>
                             </div>
@@ -155,8 +156,8 @@ export default function Contact({ theme }) {
                                     value={formState.message}
                                     onChange={handleChange}
                                     rows={5}
-                                    placeholder="Payload description..."
-                                    className="w-full bg-[var(--text-primary)]/5 border border-white/5 rounded-2xl px-6 py-4 text-[var(--text-primary)] placeholder-slate-700 focus:outline-none focus:border-cyan-500/50 focus:bg-[var(--text-primary)]/10 transition-all duration-300 resize-none font-light"
+                                    placeholder="Enter your message payload..."
+                                    className="w-full bg-slate-900/50 border border-white/5 rounded-2xl px-6 py-4 text-[var(--text-primary)] placeholder-slate-600 focus:outline-none focus:border-cyan-500/50 focus:bg-slate-900/80 transition-all duration-300 resize-none font-light"
                                 ></textarea>
                             </div>
 
