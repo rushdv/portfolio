@@ -24,11 +24,9 @@ function App() {
     root.setAttribute("data-theme", theme);
     document.body.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
-    console.log("Theme updated to:", theme);
   }, [theme]);
 
   const toggleTheme = () => {
-    console.log("Toggle clicked. Current theme:", theme);
     setTheme(prev => prev === "dark" ? "light" : "dark");
   };
 
