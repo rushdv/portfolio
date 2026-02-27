@@ -1,31 +1,26 @@
 import { motion } from "framer-motion";
-import { Star, GitFork, Code2, TrendingUp, Calendar, Award } from "lucide-react";
+import { Star, GitFork, Code2, TrendingUp } from "lucide-react";
 import TextDecrypt from "../components/TextDecrypt";
+import useGitHubStats from "../hooks/useGitHubStats";
 
 export default function GitHubStats({ theme }) {
-    // Simulated GitHub stats - Replace with real API data if needed
-    const stats = {
-        totalStars: 45,
-        totalForks: 23,
-        totalRepos: 28,
-        contributions: 847,
-        currentStreak: 12,
-        longestStreak: 45
+    const { stats, loading } = useGitHubStats('rushdv');
+    
+    const defaultStats = {
+        totalStars: 0,
+        totalForks: 0,
+        totalRepos: 0,
+        contributions: 0,
+        languages: []
     };
 
-    const languages = [
-        { name: "JavaScript", percentage: 35, color: "bg-yellow-500" },
-        { name: "Python", percentage: 28, color: "bg-blue-500" },
-        { name: "React", percentage: 20, color: "bg-cyan-500" },
-        { name: "CSS", percentage: 12, color: "bg-purple-500" },
-        { name: "Other", percentage: 5, color: "bg-gray-500" }
-    ];
+    const displayStats = stats || defaultStats;
 
     const statCards = [
-        { icon: Star, label: "Total Stars", value: stats.totalStars, color: "text-yellow-500" },
-        { icon: GitFork, label: "Total Forks", value: stats.totalForks, color: "text-cyan-500" },
-        { icon: Code2, label: "Repositories", value: stats.totalRepos, color: "text-blue-500" },
-        { icon: TrendingUp, label: "Contributions", value: stats.contributions, color: "text-green-500" }
+        { icon: Star, label: "Total Stars", value: displayStats.totalStars, color: "text-yellow-500" },
+        { icon: GitFork, label: "Total Forks", value: displayStats.totalForks, color: "text-cyan-500" },
+        { icon: Code2, label: "Repositories", value: displayStats.totalRepos, color: "text-blue-500" },
+        { icon: TrendingUp, label: "Public Repos", value: displayStats.totalRepos, color: "text-green-500" }
     ];
 
     return (
@@ -77,47 +72,33 @@ export default function GitHubStats({ theme }) {
                 >
                     <h3 className="text-2xl font-bold text-[var(--text-primary)] mb-8 flex items-center gap-3">
                         <Code2 className="text-cyan-500" size={28} />
-                        Most Used Languages
+                        Top Languages
                     </h3>
-                    <div className="space-y-6">
-                        {languages.map((lang, index) => (
-                            <div key={index}>
-                                <div className="flex justify-between mb-2">
-                                    <span className="text-[var(--text-primary)] font-medium">{lang.name}</span>
-                                    <span className="text-[var(--text-secondary)] font-mono text-sm">{lang.percentage}%</span>
+                    {loading ? (
+                        <div className="text-[var(--text-secondary)]">Loading GitHub data...</div>
+                    ) : displayStats.languages && displayStats.languages.length > 0 ? (
+                        <div className="space-y-6">
+                            {displayStats.languages.slice(0, 5).map((lang, index) => (
+                                <div key={index}>
+                                    <div className="flex justify-between mb-2">
+                                        <span className="text-[var(--text-primary)] font-medium">{lang.name}</span>
+                                        <span className="text-[var(--text-secondary)] font-mono text-sm">{lang.percentage}%</span>
+                                    </div>
+                                    <div className="w-full bg-white/5 rounded-full h-3 overflow-hidden">
+                                        <motion.div
+                                            initial={{ width: 0 }}
+                                            whileInView={{ width: `${lang.percentage}%` }}
+                                            viewport={{ once: true }}
+                                            transition={{ duration: 0.8, delay: index * 0.05 }}
+                                            className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"
+                                        />
+                                    </div>
                                 </div>
-                                <div className="w-full bg-white/5 rounded-full h-3 overflow-hidden">
-                                    <motion.div
-                                        initial={{ width: 0 }}
-                                        whileInView={{ width: `${lang.percentage}%` }}
-                                        viewport={{ once: true }}
-                                        transition={{ duration: 1, delay: index * 0.1 }}
-                                        className={`h-full ${lang.color} rounded-full`}
-                                    />
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </motion.div>
-
-                {/* Contribution Streak */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                    className="grid md:grid-cols-2 gap-6"
-                >
-                    <div className={`glass-card p-8 rounded-3xl border-white/5 transition-all duration-500 ${theme === 'dark' ? 'hover:border-cyan-500/20' : 'hover:border-cyan-500/30'}`}>
-                        <Calendar className="text-cyan-500 mb-4" size={32} />
-                        <div className="text-4xl font-black text-[var(--text-primary)] mb-2">{stats.currentStreak} days</div>
-                        <div className="text-[var(--text-secondary)] font-light">Current Streak</div>
-                    </div>
-                    <div className={`glass-card p-8 rounded-3xl border-white/5 transition-all duration-500 ${theme === 'dark' ? 'hover:border-cyan-500/20' : 'hover:border-cyan-500/30'}`}>
-                        <Award className="text-yellow-500 mb-4" size={32} />
-                        <div className="text-4xl font-black text-[var(--text-primary)] mb-2">{stats.longestStreak} days</div>
-                        <div className="text-[var(--text-secondary)] font-light">Longest Streak</div>
-                    </div>
+                            ))}
+                        </div>
+                    ) : (
+                        <div className="text-[var(--text-secondary)]">No language data available</div>
+                    )}
                 </motion.div>
             </div>
         </section>
