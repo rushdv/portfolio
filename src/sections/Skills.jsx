@@ -58,7 +58,7 @@ export default function Skills({ theme }) {
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.5, delay: categoryIndex * 0.15, ease: "easeOut" }}
                             whileHover={{ y: -8, scale: 1.02 }}
-                            className="group glass-card p-8 rounded-2xl border border-white/10 hover:border-white/30 transition-all duration-500 backdrop-blur-lg hover:shadow-xl hover:shadow-cyan-500/0 -lg"}
+                            className="group glass-card p-8 rounded-2xl border border-white/10 hover:border-white/30 transition-all duration-500 backdrop-blur-lg hover:shadow-xl hover:shadow-cyan-500/10"
                         >
                             {/* Category Header */}
                             <div className="flex items-center gap-4 mb-8">
@@ -89,6 +89,7 @@ export default function Skills({ theme }) {
                                 ))}
                             </div>
                         </motion.div>
+                    ))}
                 </div>
             </div>
         </section>
