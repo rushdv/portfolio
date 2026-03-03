@@ -111,7 +111,8 @@ export default function Projects({ theme }) {
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.5, delay: (index % 3) * 0.1, ease: "easeOut" }}
                             whileHover={{ y: -12, scale: 1.02 }}
-                            className="group relative glass-card p-8 rounded-2xl border border-white/10 hover:border-white/30 transition-all duration-500 flex flex-col h-full backdrop-blur-lg hover:shadow-2xl hover:shadow-cyan-500/10"}
+                            className="group relative glass-card p-8 rounded-2xl border border-white/10 hover:border-white/30 transition-all duration-500 flex flex-col h-full backdrop-blur-lg hover:shadow-2xl hover:shadow-cyan-500/10"
+                        >
                         >
                             <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 blur-3xl rounded-full -mr-20 -mt-20 group-hover:from-cyan-500/20 group-hover:to-blue-500/20 transition-all duration-700 opacity-0 group-hover:opacity-100"></div>
 
