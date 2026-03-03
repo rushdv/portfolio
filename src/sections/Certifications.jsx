@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Award, Shield, Code, Cloud, GraduationCap, CheckCircle } from "lucide-react";
-import TextDecrypt from "../components/TextDecrypt";
 
 export default function Certifications({ theme }) {
     const certifications = [
@@ -60,9 +59,7 @@ export default function Certifications({ theme }) {
                     className="flex flex-col items-center text-center mb-20 space-y-4"
                 >
                     <h2 className="flex items-center text-4xl font-black text-[var(--text-primary)] uppercase tracking-[0.2em]">
-                        <span className="text-cyan-500 mr-4 font-mono text-2xl opacity-60">07.</span>
-                        <TextDecrypt text="Certifications" />
-                        <span className="ml-3 text-gradient"><TextDecrypt text="& Achievements" delay={700} /></span>
+                        <span className="text-cyan-500 mr-4 font-mono text-2xl opacity-60">07.</span> Certifications & Achievements
                     </h2>
                     <div className="w-24 h-1.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"></div>
                 </motion.div>
