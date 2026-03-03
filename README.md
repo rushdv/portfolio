@@ -1,6 +1,6 @@
-# Shihab's Portfolio 🚀
+# Shihab Shahriar Rashu Portfolio
 
-> "Building clean, scalable, and secure systems with modern technologies."
+> Building clean, scalable, and secure systems with modern technologies.
 
 A personalized developer portfolio built with React and Tailwind CSS, featuring a unique terminal-themed contact section, dark mode aesthetics, and a showcase of full-stack and cybersecurity skills.
 
@@ -13,14 +13,11 @@ A personalized developer portfolio built with React and Tailwind CSS, featuring 
 - **[Vite](https://vitejs.dev/)** - Next Generation Frontend Tooling
 - **[Lucide React](https://lucide.dev/)** - Beautiful & consistent icons
 
-## ✨ Features
+## Features
 
-- **🎨 Modern Dark Aesthetic**: Deep slate theme with vibrant cyan accents and glassmorphism effects.
-- **💻 Terminal-Style Interaction**: Unique "Get in Touch" section designed as a coding IDE with syntax highlighting.
-- **📱 Fully Responsive**: Seamless experience across mobile, tablet, and desktop devices.
-- **⚡ High Performance**: Built with Vite for lightning-fast HMR and optimized production builds.
-- **✨ Smooth Animations**: Powered by Framer Motion for engaging entrance and hover effects.
-- **🛡️ Security Focused**: Showcases cybersecurity toolset and skills alongside development expertise.
+- Modern responsive design with a clean, dark aesthetic.
+- Built with React and Tailwind CSS for performance and flexibility.
+- Focused on showcasing professional work and technical skills.
 
 ## 📂 Project Structure
 
