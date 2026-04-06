@@ -31,7 +31,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen transition-colors duration-500 overflow-x-hidden pb-8">
+    <div className="min-h-screen transition-colors duration-500 overflow-x-hidden pb-10">
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <main>
         <Hero theme={theme} />
